@@ -1,0 +1,114 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(https://fonts.google.com/specimen/Montserrat);
+}
+
+body{
+    font-family: Montserrat;
+    background-image: url(https://s3-alpha-sig.figma.com/img/fb9a/f616/f137b6c8e53ed7dee949976e5d48942c?Expires=1702252800&Signature=AvaKjs6AburHvorZXhEFPfeFkIg5ARuYle~7FcXtJNox9YFgHaLwttHuP7sjyokbXcy6qNN3r~4VYw9r1NoP5Tbjro8CF9ii3f3wm6Js39unaBX5j05eP6ejtJptkFg9tMvR2iwjkZGmZuDoO5ao08OwX0HOAJO5Nuir2JV9wPNHhkTFtRo-Q5TbL6x-OrwlO7pbPj-G2mSd~v3J-IXdCpwO17hF77T3YvUAjGePMsKwJQ2PhLsaaCrGQNvtSlRJP1ZPw6frEJFc891-egYi2I4cZf6vWKs~Y9hWEVzZ1oMM~N90Knu3afaQcUQib3WvO52P9OLksILPZxfXPJVklw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4);
+    background-position-y: -200px;
+    background-position-x: -150px;
+    background-repeat: no-repeat;
+    
+}
+
+h1{
+    text-align: start;
+    margin-left: 15px;
+
+}
+
+.contact-form{
+    position: absolute;
+    right: 120px;
+    top: 80px;
+    width: 424px;
+    height: 488px;
+    padding: 20px;
+    background-color: beige;
+    border-radius: 25px;
+    
+}
+
+table{
+    border-spacing: 15px;
+    
+}
+
+input{
+    border-radius: 50px;
+    height: 40px;
+    padding-left: 15px;
+    border: none;
+}
+
+textarea{
+    border-radius: 20px;
+    border: none;
+    padding-left: 15px;
+    padding-top: 10px;
+}
+
+#submit{
+    
+    height: 40px;
+    width: 70px;
+    border-radius: 40px;
+    background-color: #E9A178;
+    color: white;
+    border: none;
+    font-weight: bold;
+    font-family: Montserrat;
+    /* padding: 20px; */
+    
+}
+
+.contact-info{
+    position: relative;
+    background-color: #A9907E;
+    top:900px;
+    left:150px;
+    height: 412px;
+    width: 1000px;
+    border-radius: 25px;
+}
+
+.contact-left{
+    float: left;
+    margin: 50px;
+    width: 30%;
+    height: 100px;
+    color: white;
+}
+
+.contact-right{
+    float: right;
+    width: 50%;
+}
+
+td{
+    border: none;
+}
+
+th{
+    text-align: start;
+}
+
+#submit:hover{
+    background-color: #e7b496;
+}
+
+p{
+    line-height: 25px;
+}
+
+a{
+    color: white;
+}
+
+iframe{
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+    width: 500px;
+    height: 412px;
+}
