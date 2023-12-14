@@ -101,7 +101,7 @@ flex-shrink: 0;
   background-color: #F6E1C3;
   position: absolute;
   top:11.5em;
-  left: 1020px;
+  right: 0px;
   z-index: 100;
   width: 400px;
   text-align: center;
@@ -137,7 +137,7 @@ button:hover{
   background-color: #F6E1C3;
   position: absolute;
   top:11.5em;
-  left: 1020px;
+  right: 0px;
   z-index: 100;
   width: 400px;
   text-align: center;

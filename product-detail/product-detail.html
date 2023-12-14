@@ -268,6 +268,7 @@
             var messclicktime=0;
             var accountclicktime=0;
             var subresclicktime=0;
+            mess.style.display='none';
             productmenu.style.display='none';
             collectionmenu.style.display='none';
             $('.sign-in-btn').click(e=>{
@@ -369,21 +370,6 @@
                 }, 200);
             })
     });
-     $(document).ready(function(){
-    $('.slide_show_product').slick({
-        dots: false,
-        infinite: true,
-        speed: 300,
-        slidesToShow: 1,
-        variableWidth: true,
-        autoplay: true,
-        autoplaySpeed: 3000,
-        prevArrow:
-        `<button type="button" class="slick-prev"><i class="fa-solid fa-arrow-left"></i></button>`,
-        nextArrow:
-        `<button type="button" class="slick-next"><i class="fa-solid fa-arrow-right"></i></button>`,
-    });
-  });
     </script>
     <script src="https://kit.fontawesome.com/ae7bc8c7df.js" crossorigin="anonymous"></script>
 </body>
