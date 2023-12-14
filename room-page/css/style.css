@@ -75,11 +75,11 @@ header.scrolled nav a:hover{
   color: #333;
 }
 
-li {
+header li {
   float: left;
 }
 
-a {
+header a {
   display: block;
   color: black;
   text-align: center;
@@ -87,7 +87,7 @@ a {
   text-decoration: none;
 }
 
-a:hover {
+header a:hover {
   background-color: #ddd;
   color: black;
 }
@@ -991,14 +991,20 @@ div {
 .footers .footer-li {
   position: relative;
   width: fit-content;
+  margin-top: -1px;
   font-family: "Montserrat", Helvetica;
   font-weight: 400;
-  color: rgba(24, 22, 22, 1);
+  color: var(--neutralblack);
   font-size: 18px;
   text-align: center;
   letter-spacing: 0;
   line-height: 30px;
   white-space: nowrap;
+}
+
+.footer-li a{
+  text-decoration: none;
+  color: #000000;
 }
 
 .footers .footer-section-2 {
