@@ -10,7 +10,6 @@
         type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
       >
-    <link rel="stylesheet" href="app.js">
 </head>
 <body>
     <div id="container"> 
@@ -42,11 +41,15 @@
                     <nav>
                     <ul>
                         <li><a href="#home">Trang chủ</a></li>
-                        <li><a class="product_page" href="#product">Sản phẩm</a></li>
+                        <li><a class="product_page" href="#product">Sản phẩm <i class="fa-solid fa-caret-down"></i></a>
+                        
+                        </li>
                         <li><a href="#rooms">Loại phòng</a></li>
-                        <li><a class="collection_page" href="#collection">Bộ sưu tập</a></li>
+                        <li><a class="collection_page" href="#collection">Bộ sưu tập <i class="fa-solid fa-caret-down"></i></a></li>
+                        <li><a href="#news">Tin tức</a></li>
                         <li><a href="#services">Về chúng tôi</a></li>
                         <li><a href="#contact">Liên hệ</a></li>
+                        
                     </ul>
                 </nav>
                 </header>
@@ -118,10 +121,17 @@
     <div id="ad_bar">
         <div id="bar_content">
             <div id="noti_text">GIẢM NGAY 20% cho đơn đặt hàng đầu tiên. Đăng ký để nhận thông tin về ưu đãi mới!</div>
-            <div>Đăng ký</div>
+            <div class="sub">Đăng ký</div>
         </div>
-    
+        <div class="sub_res_table">
+            <p class="sub_res_header">NHẬN TIN KHUYẾN MÃI</p>
+            <div class="sub_res_section">
+                <input type="email" id="sub_res_email" placeholder="Nhập email..." maxlength="40">
+                <div class="sub_res_button">ĐĂNG KÝ</div>
+            </div>
+        </div>
     </div>
+    
     <div id="lane1">
             <p id="lane1_text1">Nơi mọi ý tưởng trở thành hiện thực !!</p>
             <p id="lane1_text2">Chúng tôi sẽ giúp bạn biến mọi ý tưởng về không gian sống thành hiện thực ấm áp và tiện nghi qua các dự án thiết kế nội thất độc đáo.</p>
@@ -152,7 +162,7 @@
                 Mùa đông đang đến
             </div>
             <div id="lane2_text2">
-                Hướng dẫn trực quan sẽ mang đến cho khách hàng cái nhìn về trang web hoặc dự án của họ.
+                Ghế sofa mềm mại, màu sắc ấm áp và đèn trang trí lung linh - tất cả đều làm nên không khí ấm cúng cho mùa lạnh.
             </div>
             <div class="slide_show_product">
                 <div id="lane2_product" class="lane2_product">
@@ -161,11 +171,11 @@
                 </div>
                 <div id="lane2_product" class="lane2_product">
                     <img class="img-feature" src="images/Frame 44.png" alt="">
-                    Bán chạy nhất
+                    Sản phẩm mới
                 </div>
                 <div id="lane2_product" class="lane2_product">
                     <img class="img-feature" src="images/Frame45.jpg" alt="">
-                    Bán chạy nhất
+                    Giảm đến 20%
                 </div>
                 <div id="lane2_product" class="lane2_product">
                     <img class="img-feature" src="images/frame46.jpg" alt="">
@@ -173,11 +183,11 @@
                 </div>
                 <div id="lane2_product" class="lane2_product">
                     <img class="img-feature" src="images/Frame 47.jpg" alt="">
-                    Bán chạy nhất
+                    Sản phẩm mới
                 </div>
                 <div id="lane2_product" class="lane2_product">
                     <img class="img-feature" src="images/Frame 48.png" alt="">
-                    Bán chạy nhất
+                    Giảm đến 20%
                 </div>
                 
                 </div>
@@ -197,7 +207,7 @@
                 Những sản phẩm bán chạy nhất
             </div>
             <div class="lane4_text2">
-                Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam sit nullam neque ultrices.
+                Khám phá Best Sellers - Những kiệt tác nội thất được yêu thích nhất, sẵn sàng làm nổi bật ngôi nhà của bạn!
             </div>
             <div class="lane4_button">
                 Xem thêm &#8594;
@@ -215,10 +225,11 @@
     </div>
     </div>
     </div>
-    <div id="lane6">“Tôi sẽ làm cho mọi thứ xung quanh tôi trở nên đẹp, đó sẽ là cuộc <br> sống của tôi.”</div>
+    <div id="lane6">"Tạo Nên Không Gian, Làm Nên Nét Đẹp"</div>
     <div id="lane7">
         <div class="lane7_header">Bộ sưu tập</div>
-        <div class="lane7_text">Lorem ipsum dolor sit amet consectetur adipiscing elit semper dalar elementum tempus hac tellus libero accumsan. </div>
+        <div class="lane7_text">Từ ghế sofa đến đèn trang trí, mỗi sản phẩm là một điểm nhấn nghệ thuật, sẵn sàng làm phong cách sống của bạn trở nên độc đáo. Hãy để chúng tôi là nguồn cảm hứng cho không gian sống của bạn.
+        </div>
         <div class="lane7_flex">
             <div class="lane5_img"><img src="images/lane5_1.png" alt=""></div>
             <div class="lane5_img"><img src="images/lane5_2.png" alt=""></div>
@@ -259,25 +270,25 @@
     </div>
     <div id="lane9">
         <div class="lane9_content">
-            <div class="lane9_header">Khách hàng nói gì về chúng tôi</div>
-            <div class="lane9_text">Lorem ipsum dolor sit amet consectetur adipiscing elit semper dalar elementum tempus hac tellus libero accumsan. </div>
+            <div class="lane9_header">Khách hàng nói gì về Nook&Nest</div>
+            <div class="lane9_text">Chúng tôi tự hào khi nhận được phản hồi tích cực từ khách hàng về trải nghiệm mua sắm và sản phẩm của mình. Những ý kiến và đánh giá của bạn là nguồn động lực lớn giúp chúng tôi ngày càng hoàn thiện và nâng cao chất lượng phục vụ tốt hơn.</div>
             <div class="lane9_customer_rate">
                 <div class="customer_rate">
-                   <p class="customer_text">A visual guide could be a wireframe, creative composition, or information architecture. A device that enables collaboration will lessen the chance of work having to be completely redone</p> 
+                   <p class="customer_text">Nook&Nest với tôi không chỉ là nơi mua sắm, mà còn là nơi tôi tìm thấy sự tự do trong việc biểu hiện bản thân. Mỗi món đồ đều là một phần của câu chuyện riêng tôi.</p> 
                         <img class="customer_img" src="images/BG.png" alt="">
-                        <p class="customer_name">John Carter</p>
-                        <p class="customer_role">Trưởng phòng tiếp thị</p>
+                        <p class="customer_name">Eddie Smith</p>
+                        <p class="customer_role">Nhân viên văn phòng</p>
                     
                 </div><div class="customer_rate">
-                    <p class="customer_text">A visual guide could be a wireframe, creative composition, or information architecture. A device that enables collaboration will lessen the chance of work having to be completely redone</p> 
+                    <p class="customer_text">Tôi luôn quay lại đây vì chất lượng sản phẩm và giá trị nhận được. Không chỉ có chất lượng cao mà giá cả cũng rất hợp lý. Đây là địa điểm tin cậy để làm mới không gian sống của bạn.</p> 
                     <img class="customer_img" src="images/BG-1.png" alt="">
-                    <p class="customer_name">Matt Cannon</p>
+                    <p class="customer_name">Sam Carell</p>
                     <p class="customer_role">Người tiêu dùng</p></div>
                  <div class="customer_rate">
-                    <p class="customer_text">A visual guide could be a wireframe, creative composition, or information architecture. A device that enables collaboration will lessen the chance of work having to be completely redone</p> 
+                    <p class="customer_text">Đội ngũ chăm sóc khách hàng của Nook&Nest thực sự rất tâm huyết. Họ luôn sẵn lòng giúp đỡ và trả lời mọi câu hỏi của tôi. Tôi đánh giá rất cao dịch vụ và trải nghiệm mua sắm ở đây.</p> 
                     <img class="customer_img" src="images/BG-2.png" alt="">
                     <p class="customer_name">Sophie Moore</p>
-                    <p class="customer_role">Trưởng bộ phận phát triển</p></div>
+                    <p class="customer_role">Kỹ sư</p></div>
                 </div>
         </div>
             <img class="ad" src="images/ad-img.jpg" alt="">
@@ -306,9 +317,13 @@
             var productmenu= document.querySelector('.product_menu');
             var collectionmenu= document.querySelector('.collection_menu');
             var isHovered = false;
+            var sub_table = document.querySelector('.sub_res_table')
             var mess=document.querySelector('.mess-table');
             var messclicktime=0;
             var accountclicktime=0;
+            var subresclicktime=0;
+            sub_table.style.display = 'none'
+            mess.style.display='none';
             mess.style.display='none';
             productmenu.style.display='none';
             collectionmenu.style.display='none';
@@ -342,7 +357,20 @@
                 isHovered = true;
                 $('.product_menu').slideDown(); 
                 div1.classList.add('hover');
-    });
+            });
+            $('.sub').click(e=>{
+                if(subresclicktime%2==1)
+                {
+                $('.sub_res_table').fadeOut();
+                }
+                else
+                $('.sub_res_table').fadeIn();
+                subresclicktime++;
+            })
+            $('.sub_res_button').click(e=>{
+                var subemail = document.querySelector('#sub_res_email').value
+                alert('Bạn đã đăng ký nhận khuyến mãi thành công với email : \n' + subemail)
+            })
 
             $('.product_page,.product_menu').mouseleave(function() {
                 isHovered = false;
