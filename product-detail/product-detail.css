@@ -1,9 +1,19 @@
 @font-face {
+<<<<<<< Updated upstream
     font-family: Montserrat;
     src: url(https://fonts.google.com/specimen/Montserrat);
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap");
+=======
+  font-family: Montserrat;
+  src: url(https://fonts.google.com/specimen/Montserrat);
+}
+
+body{
+  font-family: Montserrat;
+}
+>>>>>>> Stashed changes
 
 @keyframes slideLeft {
   0%{
