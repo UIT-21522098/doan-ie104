@@ -386,6 +386,8 @@ input{
 .product{
   margin: 30px;
 }
+.list-row{
+}
 
 .top-notifications {
   width: 100%;
@@ -1056,6 +1058,7 @@ div {
   height: 36px;
   background-color: rgba(255, 255, 255, 1);
   border-radius: 8px;
+cursor: pointer;
 }
 
 .footer-bottom svg{
