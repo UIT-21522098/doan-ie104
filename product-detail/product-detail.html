@@ -4,13 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+
+    <link rel="stylesheet" href="css/product-detail.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+  ></script>
+  <script src="https://kit.fontawesome.com/ae7bc8c7df.js" crossorigin="anonymous"></script>
+    <script src="js/product-detail.js"></script>
+
+    <link rel="stylesheet" href="product-detail.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
     <link rel="stylesheet" href="product-detail.css">
     <link
     rel="stylesheet"
     type="text/css"
     href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
   >
+
+
     <script src="product-detail.js"></script>
+
+    <script src="product-detail.js"></script>
+
 </head>
 <body>
     <div class="container">
@@ -207,7 +227,6 @@
                     <button type="button" id="submitRating">Gửi Đánh Giá</button>
             </form>
     
-            <!-- Display submitted ratings and comments -->
             <div id="userRatings">
                 <div class="comment">
                     <p class="comment-user">Nacute :></p>
@@ -241,135 +260,26 @@
         </div>
         
     </div>
+
+
+</body>
+
+
+
+</script> 
+</html>
+
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script
       type="text/javascript"
       src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
     ></script>
-    <script>
-        document.addEventListener('scroll',()=>{
-            var header = document.querySelector('header')
-            if(window.scrollY>0){
-                header.classList.add('scrolled')
-            }
-            else
-            {
-                
-                header.classList.remove('scrolled')
-            }
-        })
-        document.addEventListener('DOMContentLoaded', function(){
-            var div1 = document.querySelector('.product_page');
-            var productmenu= document.querySelector('.product_menu');
-            var collectionmenu= document.querySelector('.collection_menu');
-            var isHovered = false;
-            var sub_table = document.querySelector('.sub_res_table')
-            var mess=document.querySelector('.mess-table');
-            var messclicktime=0;
-            var accountclicktime=0;
-            var subresclicktime=0;
-            mess.style.display='none';
-            productmenu.style.display='none';
-            collectionmenu.style.display='none';
-            $('.sign-in-btn').click(e=>{
-                window.alert('Đăng nhập thành công !!');
-            })
-            $('.sign-up-btn').click(e=>{
-                var signupid = document.getElementById('sign-up-id').value;
-                var signuppass = document.getElementById('sign-up-pass').value
-                var signuppass2 =  document.getElementById('sign-up-pass2').value
-                if(signuppass != signuppass2){
-                    window.alert('Xác nhận mật khẩu sai !! Vui lòng Đăng kí lại!')
-                    return;
-                }
-                else
-                window.alert('Đăng kí thành công~!\nID : ' + signupid + '\nPassword : '+signuppass);
-            })
-            setTimeout(e => {
-                $('.ad').fadeOut();
-            }, 5000);
-            $('.mess').click(e=>{
-                if(messclicktime%2==1)
-                {
-                $(mess).fadeOut();
-                }
-                else
-                $(mess).fadeIn();
-                messclicktime++;
-            })
-            $('.product_page,.product_menu').mouseenter(function() {
-                isHovered = true;
-                $('.product_menu').slideDown(); 
-                div1.classList.add('hover');
-            });
-            $('.sub').click(e=>{
-                if(subresclicktime%2==1)
-                {
-                $('.sub_res_table').fadeOut();
-                }
-                else
-                $('.sub_res_table').fadeIn();
-                subresclicktime++;
-            })
-            $('.sub_res_button').click(e=>{
-                var subemail = document.querySelector('#sub_res_email').value
-                alert('Bạn đã đăng ký nhận khuyến mãi thành công với email : \n' + subemail)
-            })
 
-            $('.product_page,.product_menu').mouseleave(function() {
-                isHovered = false;
-                setTimeout(function() {
-                if (!isHovered) {
-                    $('.product_menu').slideUp();
-                    div1.classList.remove('hover');
-                }
-                }, 50);
-            });
-            var div2 = document.querySelector('.collection_page');
-            var isHovered = false;
-            $('.collection_page,.collection_menu').mouseenter(function() {
-                isHovered = true;
-                $('.collection_menu').slideDown(); 
-                div2.classList.add('hover');
-    });
+    <script src="https://kit.fontawesome.com/ae7bc8c7df.js" crossorigin="anonymous"></script>
+</body>
 
-            $('.collection_page,.collection_menu').mouseleave(function() {
-                isHovered = false;
-                setTimeout(function() {
-                if (!isHovered) {
-                    $('.collection_menu').slideUp();
-                    div2.classList.remove('hover');
-                }
-                }, 20); 
-            });
-
-            $('#account').click(e=>{
-                if(accountclicktime%2==1)
-                {
-                $('.sign-in').fadeOut();
-                $('.sign-up').fadeOut();
-                }
-                else
-                $('.sign-in').fadeIn();
-                accountclicktime++;
-            })
-            $('.sign-in-opt').click(e=>{
-                
-                $('.sign-up').fadeOut();
-                setTimeout(() => {
-                    
-                $('.sign-in').fadeIn();
-                }, 200);
-            })
-            $('.sign-up-opt').click(e=>{
-                
-                $('.sign-in').fadeOut();
-                setTimeout(() => {
-                    
-                $('.sign-up').fadeIn();
-                }, 200);
-            })
-    });
     </script>
     <script src="https://kit.fontawesome.com/ae7bc8c7df.js" crossorigin="anonymous"></script>
 </body>
+

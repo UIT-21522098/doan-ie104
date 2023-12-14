@@ -1,4 +1,128 @@
 
+document.addEventListener('scroll',()=>{
+    var header = document.querySelector('header')
+    if(window.scrollY>0){
+        header.classList.add('scrolled')
+    }
+    else
+    {
+        
+        header.classList.remove('scrolled')
+    }
+})
+
+document.addEventListener('DOMContentLoaded', function(){
+    var div1 = document.querySelector('.product_page');
+    var productmenu= document.querySelector('.product_menu');
+    var collectionmenu= document.querySelector('.collection_menu');
+    var isHovered = false;
+    var sub_table = document.querySelector('.sub_res_table')
+    var mess=document.querySelector('.mess-table');
+    var messclicktime=0;
+    var accountclicktime=0;
+    var subresclicktime=0;
+    productmenu.style.display='none';
+    collectionmenu.style.display='none';
+    $('.sign-in-btn').click(e=>{
+        window.alert('Đăng nhập thành công !!');
+    })
+    $('.sign-up-btn').click(e=>{
+        var signupid = document.getElementById('sign-up-id').value;
+        var signuppass = document.getElementById('sign-up-pass').value
+        var signuppass2 =  document.getElementById('sign-up-pass2').value
+        if(signuppass != signuppass2){
+            window.alert('Xác nhận mật khẩu sai !! Vui lòng Đăng kí lại!')
+            return;
+        }
+        else
+        window.alert('Đăng kí thành công~!\nID : ' + signupid + '\nPassword : '+signuppass);
+    })
+    setTimeout(e => {
+        $('.ad').fadeOut();
+    }, 5000);
+    $('.mess').click(e=>{
+        if(messclicktime%2==1)
+        {
+        $(mess).fadeOut();
+        }
+        else
+        $(mess).fadeIn();
+        messclicktime++;
+    })
+    $('.product_page,.product_menu').mouseenter(function() {
+        isHovered = true;
+        $('.product_menu').slideDown(); 
+        div1.classList.add('hover');
+    });
+    $('.sub').click(e=>{
+        if(subresclicktime%2==1)
+        {
+        $('.sub_res_table').fadeOut();
+        }
+        else
+        $('.sub_res_table').fadeIn();
+        subresclicktime++;
+    })
+    $('.sub_res_button').click(e=>{
+        var subemail = document.querySelector('#sub_res_email').value
+        alert('Bạn đã đăng ký nhận khuyến mãi thành công với email : \n' + subemail)
+    })
+
+    $('.product_page,.product_menu').mouseleave(function() {
+        isHovered = false;
+        setTimeout(function() {
+        if (!isHovered) {
+            $('.product_menu').slideUp();
+            div1.classList.remove('hover');
+        }
+        }, 50);
+    });
+    var div2 = document.querySelector('.collection_page');
+    var isHovered = false;
+    $('.collection_page,.collection_menu').mouseenter(function() {
+        isHovered = true;
+        $('.collection_menu').slideDown(); 
+        div2.classList.add('hover');
+});
+
+    $('.collection_page,.collection_menu').mouseleave(function() {
+        isHovered = false;
+        setTimeout(function() {
+        if (!isHovered) {
+            $('.collection_menu').slideUp();
+            div2.classList.remove('hover');
+        }
+        }, 20); 
+    });
+
+    $('#account').click(e=>{
+        if(accountclicktime%2==1)
+        {
+        $('.sign-in').fadeOut();
+        $('.sign-up').fadeOut();
+        }
+        else
+        $('.sign-in').fadeIn();
+        accountclicktime++;
+    })
+    $('.sign-in-opt').click(e=>{
+        
+        $('.sign-up').fadeOut();
+        setTimeout(() => {
+            
+        $('.sign-in').fadeIn();
+        }, 200);
+    })
+    $('.sign-up-opt').click(e=>{
+        
+        $('.sign-in').fadeOut();
+        setTimeout(() => {
+            
+        $('.sign-up').fadeIn();
+        }, 200);
+    })
+});
+
 function incrementQuantity() {
     const quantity = document.getElementById('quantity');
     quantity.value = parseInt(quantity.value) + 1;
@@ -13,8 +137,6 @@ function decrementQuantity() {
 function changeImage(color) {
     const productImage = document.getElementById('productImage');
     let imagePath;
-
-    // Set image path based on the selected color
     switch (color) {
         case '#color1':
             imagePath = 'images/f20fa2a89ea4a4f83be1d7b744c8cdfe.png';
@@ -27,48 +149,26 @@ function changeImage(color) {
             imagePath = 'images/f20fa2a89ea4a4f83be1d7b744c8cdfe.png';
             break;
     }
-
-    // Change the product image source
     productImage.src = imagePath;
-
 }
-
 
 $(document).ready(function () {
     $("#color1").click(function () {
-        // Remove border from all buttons
         $(".color-circle").css("border", "none");
-
-        // Set border for the clicked button
         $("#color1").css("border", "1px solid gray");
     });
 
     $("#color2").click(function () {
-        // Remove border from all buttons
         $(".color-circle").css("border", "none");
-
-        // Set border for the clicked button
         $("#color2").css("border", "1px solid gray");
     });
-
-    // Add similar click functions for other color buttons
 });
 
-
 document.addEventListener('DOMContentLoaded', function () {
-    // ... Your existing code ...
-
     $(".star").click(function () {
         const selectedRating = $(this).data("rating");
-
-        // Remove 'active' class from all stars
         $(".star").removeClass("active");
-
-        // Add 'active' class to the clicked star and previous stars
         $(this).addClass("active").prevAll().addClass("active");
-
-        // Set the selected rating in the hidden input field (if needed)
-        // $("#userRating").val(selectedRating);
     });
 
     $("#submitRating").click(function () {
@@ -77,9 +177,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const userComment = $("#userComment").val();
         const currentTime = new Date();
         const formattedTime = currentTime.toLocaleString();
-
-        const starIcons = Array(userRating).fill('<i class="material-icons">star</i>').join(''); // Repeat Material Icons star based on user rating
-
+        const starIcons = Array(userRating).fill('<i class="material-icons">star</i>').join('');
         const ratingElement = `
             <div class="comment">
                 <p class="comment-user">${name}</p>
@@ -88,10 +186,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 <p class="comment-time">${formattedTime}</p>
             </div>
         `;
-
         $("#userRatings").append(ratingElement);
-
-        // Clear the input fields after submission
         $("#name").val("");
         $(".star").removeClass("active");
         $("#userComment").val("");

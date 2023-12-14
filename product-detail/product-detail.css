@@ -1,4 +1,16 @@
 
+@font-face {
+
+    font-family: Montserrat;
+    src: url(https://fonts.google.com/specimen/Montserrat);
+}
+
+body{
+  font-family: Montserrat;
+}
+=======
+
+
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap");
 
