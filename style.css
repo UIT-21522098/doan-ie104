@@ -943,9 +943,10 @@ html{
 .product_menu{
     width: 1400px;
     height: 500px;
+    flex-shrink: 0;
+    flex-shrink: 0;
     position: fixed;
     top:46px;
-    left:0px;
     display: grid;
     grid-template-columns:repeat(5,1fr);
     grid-row-gap: 10px;
@@ -962,9 +963,10 @@ html{
     height: 474px;
 }
 .collection_menu{
+    
     position: fixed;
     top:46px;
-    left: 620px;
+    left: 600px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -983,6 +985,5 @@ html{
     transform: translateY(-10%);
 }
 .product{
-    z-index: 100;
     margin: 30px;
 }
