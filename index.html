@@ -42,11 +42,13 @@
                     <nav>
                     <ul>
                         <li><a href="#home">Trang chủ</a></li>
-                        <li><a class="product_page" href="#product">Sản phẩm</a></li>
+                        <li><a class="product_page" href="#product">Sản phẩm <i class="fa-solid fa-caret-down"></i></a></li>
                         <li><a href="#rooms">Loại phòng</a></li>
-                        <li><a class="collection_page" href="#collection">Bộ sưu tập</a></li>
+                        <li><a class="collection_page" href="#collection">Bộ sưu tập <i class="fa-solid fa-caret-down"></i></a></li>
+                        <li><a href="#news">Tin tức</a></li>
                         <li><a href="#services">Về chúng tôi</a></li>
                         <li><a href="#contact">Liên hệ</a></li>
+                        
                     </ul>
                 </nav>
                 </header>
@@ -118,10 +120,17 @@
     <div id="ad_bar">
         <div id="bar_content">
             <div id="noti_text">GIẢM NGAY 20% cho đơn đặt hàng đầu tiên. Đăng ký để nhận thông tin về ưu đãi mới!</div>
-            <div>Đăng ký</div>
+            <div class="sub">Đăng ký</div>
         </div>
-    
+        <div class="sub_res_table">
+            <p class="sub_res_header">NHẬN TIN KHUYẾN MÃI</p>
+            <div class="sub_res_section">
+                <input type="email" id="sub_res_email" placeholder="Nhập email..." maxlength="40">
+                <div class="sub_res_button">ĐĂNG KÝ</div>
+            </div>
+        </div>
     </div>
+    
     <div id="lane1">
             <p id="lane1_text1">Nơi mọi ý tưởng trở thành hiện thực !!</p>
             <p id="lane1_text2">Chúng tôi sẽ giúp bạn biến mọi ý tưởng về không gian sống thành hiện thực ấm áp và tiện nghi qua các dự án thiết kế nội thất độc đáo.</p>
@@ -307,9 +316,13 @@
             var productmenu= document.querySelector('.product_menu');
             var collectionmenu= document.querySelector('.collection_menu');
             var isHovered = false;
+            var sub_table = document.querySelector('.sub_res_table')
             var mess=document.querySelector('.mess-table');
             var messclicktime=0;
             var accountclicktime=0;
+            var subresclicktime=0;
+            sub_table.style.display = 'none'
+            mess.style.display='none';
             mess.style.display='none';
             productmenu.style.display='none';
             collectionmenu.style.display='none';
@@ -343,7 +356,20 @@
                 isHovered = true;
                 $('.product_menu').slideDown(); 
                 div1.classList.add('hover');
-    });
+            });
+            $('.sub').click(e=>{
+                if(subresclicktime%2==1)
+                {
+                $('.sub_res_table').fadeOut();
+                }
+                else
+                $('.sub_res_table').fadeIn();
+                subresclicktime++;
+            })
+            $('.sub_res_button').click(e=>{
+                var subemail = document.querySelector('#sub_res_email').value
+                alert('Bạn đã đăng ký nhận khuyến mãi thành công với email : \n' + subemail)
+            })
 
             $('.product_page,.product_menu').mouseleave(function() {
                 isHovered = false;
