@@ -4,127 +4,137 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/product-detail.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-  <script
-    type="text/javascript"
-    src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
-  ></script>
-  <script src="https://kit.fontawesome.com/ae7bc8c7df.js" crossorigin="anonymous"></script>
-    <!-- <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script> -->
-    <script src="js/product-detail.js"></script>
+    <link rel="stylesheet" href="product-detail.css">
+    <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+  >
+    <script src="product-detail.js"></script>
 </head>
 <body>
     <div class="container">
-
-        <div class="headers">
-
-            <div class="navbar">
-              <header>
-                <nav>
-                  <ul>
-                    <li><a href="#home">Trang chủ</a></li>
-                    <li><a class="product_page" href="#product">Sản phẩm</a></li>
-                    <li><a href="#rooms">Loại phòng</a></li>
-                    <li><a class="collection_page" href="#collection">Bộ sưu tập</a></li>
-                    <li><a href="#services">Về chúng tôi</a></li>
-                    <li><a href="#contact">Liên hệ</a></li>
-                  </ul>
-                </nav>
-              </header>
-            </div>
-      
-            <div class="menu">
-              <div class="grid-container">
-                <div id="account">
-                  <img class="img" src="img/User.png" />
-                  <div class="text-wrapper">Tài khoản</div>
+            <div id="header">
+                <div>
+              <img class="logo_pic" src="images/image 3.png" alt="">
+              <img class="logo_name" src="images/Ảnh màn hình 2023-11-02 lúc 09.05 1.png" alt="">
                 </div>
-                <div class="wishlist">
-                  <img class="img" src="img/heart.svg" />
-                  <div class="text-wrapper">Yêu thích</div>
-                </div>
-                <div class="cart">
-                  <img class="img" src="img/Feather Icon.png" />
-                  <div class="text-wrapper">Giỏ hàng</div>
-                </div>
+              <div id="search_bar">
+                  <input id="search_text" type="text" placeholder="Tìm Kiếm">
+                  <img class="search_img" src="images/Search.png" alt="">
               </div>
-            </div>
-      
-            <div id="search_bar">
-              <input id="search_text" type="text" placeholder="Tìm kiếm">
-              <img class="search_img" src="img/Search.svg" alt="">
-            </div>
-      
-      
-      
-            <img class="logo-image" src="img/Logo-img.png" />
-            <img class="logo-name" src="img/Logo-name.png" />
+              <div id="account_section">
+                  <div id="wishlist">
+                      <div id="wishlist_img"><img src="images/Heart.png" alt=""></div>
+                      <div id="wishlist_text"><p>Yêu thích</p></div> 
+                  </div>
+                  <div id="cart">
+                      <div id="cart_img"><img src="images/Feather Icon.png" alt=""></div>
+                      <div id="cart_text">Giỏ hàng</div>
+                  </div>
+                  <div id="account">
+                      <div><img src="images/User.png" alt=""></div>
+                      <div>Tài khoản</div>
+                      
+                  </div>
+              </div>
+              <div class="sticky">
+              <header>
+                  <nav>
+                  <ul>
+                      <li><a href="#home">Trang chủ</a></li>
+                      <li><a class="product_page" href="#product">Sản phẩm <i class="fa-solid fa-caret-down"></i></a></li>
+                      <li><a href="#rooms">Loại phòng</a></li>
+                      <li><a class="collection_page" href="#collection">Bộ sưu tập <i class="fa-solid fa-caret-down"></i></a>
+                        <div class="collection_menu">
+                            <div class="collection">Thảm</div>
+                            <div class="collection">Gối</div>
+                            <div class="collection">Cây</div>
+                            <div class="collection">Gương</div>
+                            <div class="collection-see-all">Xem tất cả <i class="fa-solid fa-chevron-right"></i></div>
+                          </div></li>
+                      <li><a href="#news">Tin tức</a></li>
+                      <li><a href="#services">Về chúng tôi</a></li>
+                      <li><a href="#contact">Liên hệ</a></li>
+                      
+                  </ul>
+              </nav>
+              </header>
           </div>
-      
+          <div class="mess-table">
+            <div class="mess-table-content">
+                <div>
+                    <img class="left-side" src="images/Prominence Elements/Page Profile Picture.png" alt="">
+                    <img class="right-side" src="images/Prominence Elements/Account Switch.png" alt="">
+                    <img class="right-side" src="images/Prominence Elements/Overflow.png" alt="">
+                    <img class="right-side" src="images/Prominence Elements/Minimize.png" alt="">
+                </div>
+                <div class="mess-table-content-2">Trò chuyện với Nook & Nest</div>
+                <div class="mess-table-content-3">Xin chào! Tôi có thể giúp gì được cho bạn?</div>
+                <div class="mess-table-content-4"><i class="fa-brands fa-facebook-messenger"></i> Tiếp tục như là Na</div>
+                <div class="mess-table-content-5">Tiếp tục như là Khách</div>
+                <div class="mess-table-content-6">Bằng cách tiếp tục với tư cách là khách, bạn đồng ý với <span>Điều khoản, Chính sách dữ liệu</span>  và <span>Chính sách cookie</span> của Facebook.</div>
+            </div>
+        </div>
+        <div class="mess">
+            <i class="fa-brands fa-facebook-messenger"></i>
+        </div>
+          </div>
           <div class="sign-in">
-            <div class="sign-in-1">ĐĂNG NHẬP TÀI KHOẢN</div>
-            <div class="sign-in-2">Nhập email và mật khẩu của bạn</div>
-            <div class="sign-in-3"><input type="text" id="sign-in-id" placeholder="Nhập email hoặc số điện thoại" maxlength="40"></div>
-            <div class="sign-in-4"><input type="password" id="sign-in-pass" placeholder="Mật khẩu" maxlength="40"></div>
-            <div class="sign-in-5">Website được bảo vệ bởi reCAPTCHA,<span class="span-sign-up">Chính sách bảo mật</span> và <span class="span-sign-up">Điều khoản dịch vụ</span> của Google</div>
-            <div class="sign-in-6"><button class="sign-in-btn">ĐĂNG NHẬP</button></div>
-            <div class="sign-in-7">Khách hàng mới? <span class="span-sign-in sign-up-opt">Tạo tài khoản</span></div>
-            <div class="sign-in-8">Quên mật khẩu?  <span class="span-sign-in">Khôi phục mật khẩu</span> </div>
-        </div>
-        <div class="sign-up">
-            <div class="sign-up-1">ĐĂNG KÝ</div>
-            <div class="sign-up-3"><input type="text" id="sign-up-id" placeholder="Nhập email hoặc số điện thoại" maxlength="40"></div>
-            <div class="sign-up-4"><input type="password" id="sign-up-pass" placeholder="Mật khẩu" maxlength="40"></div>
-            <div class="sign-up-5"><input type="password" id="sign-up-pass2" placeholder="Xác nhận mật khẩu" maxlength="40"></div>
-            <div class="sign-up-6"><button class="sign-up-btn">ĐĂNG KÝ</button></div>
-            <div class="sign-up-7">Bằng việc đăng kí, bạn đã đồng ý với Nook & Nest về <span class="span-sign-up">Chính sách bảo mật</span> & <span class="span-sign-up">Điều khoản dịch vụ</span></div>
-            <div class="sign-up-8">Bạn đã có tài khoản?<span class="span-sign-in sign-in-opt">Đăng Nhập</span></div>
-        </div>
+              <div class="sign-in-1">ĐĂNG NHẬP TÀI KHOẢN</div>
+              <div class="sign-in-2">Nhập email và mật khẩu của bạn</div>
+              <div class="sign-in-3"><input type="text" id="sign-in-id" placeholder="Nhập email hoặc số điện thoại" maxlength="40"></div>
+              <div class="sign-in-4"><input type="password" id="sign-in-pass" placeholder="Mật khẩu" maxlength="40"></div>
+              <div class="sign-in-5">Website được bảo vệ bởi reCAPTCHA,<span class="span-sign-up">Chính sách bảo mật</span> và <span class="span-sign-up">Điều khoản dịch vụ</span> của Google</div>
+              <div class="sign-in-6"><button class="sign-in-btn">ĐĂNG NHẬP</button></div>
+              <div class="sign-in-7">Khách hàng mới? <span class="span-sign-in sign-up-opt">Tạo tài khoản</span></div>
+              <div class="sign-in-8">Quên mật khẩu?  <span class="span-sign-in">Khôi phục mật khẩu</span> </div>
+          </div>
+          <div class="sign-up">
+              <div class="sign-up-1">ĐĂNG KÝ</div>
+              <div class="sign-up-3"><input type="text" id="sign-up-id" placeholder="Nhập email hoặc số điện thoại" maxlength="40"></div>
+              <div class="sign-up-4"><input type="password" id="sign-up-pass" placeholder="Mật khẩu" maxlength="40"></div>
+              <div class="sign-up-5"><input type="password" id="sign-up-pass2" placeholder="Xác nhận mật khẩu" maxlength="40"></div>
+              <div class="sign-up-6"><button class="sign-up-btn">ĐĂNG KÝ</button></div>
+              <div class="sign-up-7">Bằng việc đăng kí, bạn đã đồng ý với Nook & Nest về <span class="span-sign-up">Chính sách bảo mật</span> & <span class="span-sign-up">Điều khoản dịch vụ</span></div>
+              <div class="sign-up-8">Bạn đã có tài khoản?<span class="span-sign-in sign-in-opt">Đăng Nhập</span></div>
+          </div>
       <div class="product_menu">
       <div class="list-row"> 
-        <div class="product">Sofa</div>
-        <div class="product">Ghế Bành</div>
-        <div class="product">Ghế</div>
-        <div class="product">Ghế đôn</div>
-        <div class="product-img"><img src="images/Layer 2-1.png" alt=""></div>
+          <div class="product">Sofa</div>
+          <div class="product">Ghế Bành</div>
+          <div class="product">Ghế</div>
+          <div class="product">Ghế đôn</div>
+          <div class="product-img"><img src="images/Layer 2-1.png" alt=""></div>
       </div>
       <div class="list-row"> 
-        <div class="product">Bàn cà phê</div>
-        <div class="product">Bàn ăn</div>
-        <div class="product">Bàn làm việc</div>
-        <div class="product">Bàn họp</div>
-        <div class="product-img"><img src="images/Layer 2-2.png" alt=""></div>
+          <div class="product">Bàn cà phê</div>
+          <div class="product">Bàn ăn</div>
+          <div class="product">Bàn làm việc</div>
+          <div class="product">Bàn họp</div>
+          <div class="product-img"><img src="images/Layer 2-2.png" alt=""></div>
       </div>
       <div class="list-row"> 
-        <div class="product">Giường cơ bản</div>
-        <div class="product">Giường tầng</div>
-        <div class="product">Giường kéo</div>
-        <div class="product">Giường bốn cọc</div>
-        <div class="product-img"><img src="images/Layer 2-3.png" alt=""></div>
+          <div class="product">Giường cơ bản</div>
+          <div class="product">Giường tầng</div>
+          <div class="product">Giường kéo</div>
+          <div class="product">Giường bốn cọc</div>
+          <div class="product-img"><img src="images/Layer 2-3.png" alt=""></div>
       </div>
       <div class="list-row"> 
-        <div class="product">Đèn bàn</div>
-        <div class="product">Đèn bàn làm việc</div>
-        <div class="product">Đèn đứng</div>
-        <div class="product">Đèn trần</div>
-        <div class="product-img"><img src="images/Layer 2.png" alt=""></div>
+          <div class="product">Đèn bàn</div>
+          <div class="product">Đèn bàn làm việc</div>
+          <div class="product">Đèn đứng</div>
+          <div class="product">Đèn trần</div>
+          <div class="product-img"><img src="images/Layer 2.png" alt=""></div>
       </div>
       <div class="list-row"> 
-        <div class="product">Thảm</div>
-        <div class="product">Gối</div>
-        <div class="product">Cây</div>
-        <div class="product">Gương</div>
-        <div class="product-img"><img src="images/Layer 2-4.png" alt=""></div>
+          <div class="product">Thảm</div>
+          <div class="product">Gối</div>
+          <div class="product">Cây</div>
+          <div class="product">Gương</div>
+          <div class="product-img"><img src="images/Layer 2-4.png" alt=""></div>
       </div>
-      </div>
-      <div class="collection_menu">
-      <div class="collection">Thảm</div>
-      <div class="collection">Gối</div>
-      <div class="collection">Cây</div>
-      <div class="collection">Gương</div>
-      <div class="collection-see-all">Xem tất cả <i class="fa-solid fa-chevron-right"></i></div>
       </div>
         <div class="product-container">
             <div class="product-image">
@@ -231,19 +241,33 @@
         </div>
         
     </div>
-</body>
-
-
-<!-- <script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    ></script>
+    <script>
+        document.addEventListener('scroll',()=>{
+            var header = document.querySelector('header')
+            if(window.scrollY>0){
+                header.classList.add('scrolled')
+            }
+            else
+            {
+                
+                header.classList.remove('scrolled')
+            }
+        })
         document.addEventListener('DOMContentLoaded', function(){
             var div1 = document.querySelector('.product_page');
             var productmenu= document.querySelector('.product_menu');
             var collectionmenu= document.querySelector('.collection_menu');
             var isHovered = false;
+            var sub_table = document.querySelector('.sub_res_table')
             var mess=document.querySelector('.mess-table');
             var messclicktime=0;
             var accountclicktime=0;
-            mess.style.display='none';
+            var subresclicktime=0;
             productmenu.style.display='none';
             collectionmenu.style.display='none';
             $('.sign-in-btn').click(e=>{
@@ -276,7 +300,20 @@
                 isHovered = true;
                 $('.product_menu').slideDown(); 
                 div1.classList.add('hover');
-    });
+            });
+            $('.sub').click(e=>{
+                if(subresclicktime%2==1)
+                {
+                $('.sub_res_table').fadeOut();
+                }
+                else
+                $('.sub_res_table').fadeIn();
+                subresclicktime++;
+            })
+            $('.sub_res_button').click(e=>{
+                var subemail = document.querySelector('#sub_res_email').value
+                alert('Bạn đã đăng ký nhận khuyến mãi thành công với email : \n' + subemail)
+            })
 
             $('.product_page,.product_menu').mouseleave(function() {
                 isHovered = false;
@@ -332,6 +369,21 @@
                 }, 200);
             })
     });
-
-</script> -->
-</html>
+     $(document).ready(function(){
+    $('.slide_show_product').slick({
+        dots: false,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        variableWidth: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        prevArrow:
+        `<button type="button" class="slick-prev"><i class="fa-solid fa-arrow-left"></i></button>`,
+        nextArrow:
+        `<button type="button" class="slick-next"><i class="fa-solid fa-arrow-right"></i></button>`,
+    });
+  });
+    </script>
+    <script src="https://kit.fontawesome.com/ae7bc8c7df.js" crossorigin="anonymous"></script>
+</body>
