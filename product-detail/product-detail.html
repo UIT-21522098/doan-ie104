@@ -10,6 +10,8 @@
     type="text/css"
     href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
   >
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script src="product-detail.js"></script>
 </head>
 <body>
@@ -180,8 +182,8 @@
                         <input type="number" id="quantity" class="quantity-input" value="1" min="1">
                         <button class="quantity-btn" onclick="incrementQuantity()">+</button>
                     </div>
-                    <a href="#"><button class="add-to-cart">Thêm Vào Giỏ Hàng</button></a>
-                    <a href="#"><button class="buy-now">Mua Ngay</button></a>
+                    <button class="add-to-cart">Thêm Vào Giỏ Hàng</button></a>
+                    <button class="buy-now">Mua Ngay</button></a>
 
                 
             </div>
@@ -207,7 +209,6 @@
                     <button type="button" id="submitRating">Gửi Đánh Giá</button>
             </form>
     
-            <!-- Display submitted ratings and comments -->
             <div id="userRatings">
                 <div class="comment">
                     <p class="comment-user">Nacute :></p>
@@ -234,9 +235,6 @@
                     <p class="comment-text">Giao hàng nhanh như một cơn gió. Sản phẩm chất lượng không bàn cãi. Đáng mua nha cả nhà <3</p>
                     <p class="comment-time">09:15:27 10/12/2023</p>
                 </div>
-
-
-
             </div>
         </div>
         
