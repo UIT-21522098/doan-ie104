@@ -518,20 +518,20 @@ letter-spacing: -0.42px;
     margin-right: 20px;
 }
 
-.cart-detail{
+.cartDetail{
     display: flex;
     
     width: 310px;
 
 }
 
-.cart-detail h3{
+.cartDetail h3{
     position: relative;
     height: 50px;
     
 }
 
-.cart-detail h4{
+.cartDetail h4{
     height: 10px;
     position: absolute;
     top: 30px;
@@ -865,4 +865,24 @@ letter-spacing: -0.42px;
     font-style:normal;
   }
 
-  
+  .quantity-container {
+    position: absolute;
+    margin-left: 0px;
+    align-items: center;
+    margin-top: 110px;
+}
+
+.quantity-input {
+    width: 30px;
+    padding: 5px;
+    text-align: center;
+    
+}
+
+.quantity-btn {
+    padding: 5px 10px;
+    font-size: 16px;
+    color: black;
+    border: none;
+    cursor: pointer;
+}
