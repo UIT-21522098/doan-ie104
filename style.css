@@ -290,7 +290,7 @@ a:hover {
 .ad{
     border: solid 1px #333;
     border-radius: 10px;
-    height: 20%;
+    height: 50%;
     position: fixed;
     bottom: 0;
     cursor: pointer;
