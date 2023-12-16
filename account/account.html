@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Giỏ hàng</title>
+    <title>Tài khoản</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="css/account.css">
-    <script src="js/account.js"></script>
+    <link rel="stylesheet" href="account.css">
+    <script src="account.js"></script>
 
 </head>
 
@@ -166,35 +166,50 @@
         <div class="account-body">
             <div class="box" id="update-info">
                 <i class="material-icons">account_circle</i><h5>Cập nhật thông tin</h5>
-                <p>Na<br>
-                nacute@gmail.com<br>
-                ********<br>
-                </p>
-                <div class="edit" id="edit-info">Chỉnh sửa</div>
+                <div class="information">
+                    <p id="username">Na</p>
+                    <p id="email">nacute@gmail.com</p>
+                    <p id="password"></p>
+                </div>
+                <div class="edit" id="editInfo">Chỉnh sửa</div>
             </div>
 
             <div class="box" id="shipping-info">
                 <i class="material-icons">home</i><h5>Thông tin giao hàng</h5>
-                <p>Khu phố 6<br>
-                    Phường Linh Trung<br>
-                    TP.Thủ Đức<br>
-                    TP.HCM
-                <div class="edit" id="edit-shipping">Chỉnh sửa</div>
+                <div class="shipping">
+                    <p id="street">Khu phố 6</p>
+                    <p id="district">Linh Trung</p>
+                    <p id="city">TP. Thủ Đức</p>
+                    <p id="province">TP. HCM</p>
+                </div>
+                <div class="edit" id="editShipping">Chỉnh sửa</div>
             </div>
 
             <div class="box">
                 <i class="material-icons">account_balance_wallet</i><h5>Thông tin thanh toán</h5>
-                <p>Chưa đặt thẻ nào làm phương thức thanh toán mặc định</p>
-                <div class="edit" id="edit-payment">Chỉnh sửa</div>
+                <p class="payment">Chưa đặt thẻ nào làm phương thức thanh toán mặc định</p>
+                <div class="edit" id="editPayment">Chỉnh sửa</div>
             </div>
         </div>
 
         <div id="editBox">
-            <h2>Edit Information</h2>
+            <h2>Chỉnh sửa thông tin</h2>
             <form id="editForm">
-                <label for="newInfo">New Information:</label>
-                <input type="text" id="newInfo" name="newInfo" required>
-                <button type="submit">Submit</button>
+                
+                    <p>Tên</p>
+                    <input type="text" id="newUsername">
+                
+                    <p>Email</p>
+                    <input type="text" id="newEmail">
+                
+                    <p>Mật khẩu mới</p>
+                    <input type="password" id="newPassword">
+                
+                    <p>Xác nhận mật khẩu mới</p>
+                    <input type="password" id="retypePassword">
+                    <span id="passwordWarning"></span>
+                    <button id="submit">Lưu</button>
+            
             </form>
         </div>
     </div>
