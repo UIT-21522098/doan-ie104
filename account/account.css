@@ -938,3 +938,11 @@ letter-spacing: -0.42px;
     position: absolute;
     top: -70px;
   }
+
+  .sticky a, #account_section a{
+    text-decoration: none;
+  }
+
+  #account_section a{
+    color: rgba(168, 68, 72, 1);
+  }
