@@ -410,14 +410,14 @@ letter-spacing: -0.42px;
 
 .product-image img{
     width: 100%;
-    margin-top: 82px;
+    margin-top: 112px;
 }
 
 .product-image{
     flex: 1;
     width: auto;
     margin-right: 20px;
-    height: 528px;
+    height: 616px;
     background-color: rgb(238, 238, 238);
 
 }
@@ -428,7 +428,8 @@ letter-spacing: -0.42px;
 }
 
 .product-info h2{
-    padding: 15px 0 10px 0;
+    padding: 0px 0 10px 0;
+    margin-bottom: 0;
 }
 
 .price{
