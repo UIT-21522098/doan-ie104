@@ -19,7 +19,10 @@ body{
   background: var(#FFF);
   
 }
-
+a{
+  text-decoration: none;
+  color: black;
+}
 #search_text{
   display: flex;
   flex-shrink: 0;
@@ -810,4 +813,11 @@ iframe{
     line-height: 18px;
     white-space: nowrap;
     font-style:normal;
+  }
+  header.scrolled .not{
+    background-color: white;
+    color: black;
+}
+  .not{
+    padding: 0;
   }

@@ -27,6 +27,24 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+header.scrolled{
+  background-color: #333;
+  color: white;
+  transition: background-color 0.1s ease-in-out;
+}
+header.scrolled .not{
+  background-color: white;
+  color: black;
+}
+header.scrolled nav a{
+  transition: background-color 0.4s ease-in-out;
+  background-color: #333;
+  color: white;
+}
+header.scrolled nav a:hover{
+  background-color: white;
+  color: #333;
+}
 .container {
   background-color: white;
   margin: 0 auto;
@@ -54,29 +72,6 @@ header {
   line-height: 18px; /* 100% */
   background-color: white;
 }
-
-
-
-header.scrolled{
-  background-color: #333;
-  color: white;
-  transition: background-color 0.1s ease-in-out;
-}
-header.scrolled nav a{
-  transition: background-color 0.4s ease-in-out;
-  background-color: #333;
-  color: white;
-}
-
-header.scrolled .collection a{
-  transition: background-color 0.4s ease-in-out;
-  background-color: #ffffff;
-  color: black;
-}
-header.scrolled .collection a:hover{
-font-weight: 700;
-  color:  rgba(168, 68, 72, 1);
-}
 header ul {
   list-style-type: none;
   margin: 0;
@@ -103,7 +98,7 @@ header a {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  padding:15px;
+  padding:5px;
   z-index: 100;
   width: fit-content;
   height: fit-content;
@@ -159,7 +154,7 @@ header a {
   
   position: fixed;
   top:46px;
-  margin: auto;
+  margin-left: -15px;
   display: flex;
   flex-direction: column;
   gap: 24px;

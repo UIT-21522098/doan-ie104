@@ -291,6 +291,7 @@ a:hover {
     border: solid 1px #333;
     border-radius: 10px;
     height: 50%;
+    z-index: 100;
     position: fixed;
     bottom: 0;
     cursor: pointer;
@@ -532,7 +533,7 @@ letter-spacing: -0.42px;
     line-height: 36px;
 }
 .slick-slider{
-    padding-left: 180px;
+    padding-left: 500px;
 }
 .slick-initialized .slick-slide{
     margin: 0 32px;
@@ -553,7 +554,7 @@ letter-spacing: -0.42px;
     color: white;
 }
 .slick-prev{
-    left: 180px;
+    left: 500px;
     z-index: 2;
 }
 .slick-next{
@@ -660,7 +661,7 @@ letter-spacing: -0.42px;
 .lane5_opt1{
     background-image: url(images/lane4_1.png);
     width: 600px;
-    margin-left: 22%;
+    margin-left: 0;
     margin-bottom: 5%;
     height: 474px;
 }
@@ -672,13 +673,12 @@ letter-spacing: -0.42px;
 .lane5_opt3{
     background-image: url(images/lane4_3.png);
     width: 600px;
-    margin-left: 22%;
+    margin-left: 0;
     height: 474px;
 }
 .lane5_opt4{
     background-image: url(images/lane4_4.png);
     width: 600px;
-    
     top: 654px;
     height: 474px;
 }
@@ -770,7 +770,7 @@ letter-spacing: -0.42px;
 .ghe_banh{
     position: absolute;
     top: 190px;
-    left: 17%;
+    left: 9%;
     width: 593.8px;
     height: 577.7px;
     background-image: url(images/Container-5.png);
@@ -786,7 +786,7 @@ letter-spacing: -0.42px;
     height: 342px;
     position: absolute;
     bottom: 462px;
-    left: 17%;
+    left: 9%;
 }
 .ghe{
  background-image: url(images/Container-7.png);
@@ -794,7 +794,7 @@ letter-spacing: -0.42px;
  height: 272.8px;
  position: absolute;
  top: 190px;
- right: 17%;
+ right: 9%;
 
 }
 .ghe_don{
@@ -803,7 +803,7 @@ letter-spacing: -0.42px;
     height: 272.8px;
     position: absolute;
     top: 800px;
-    left: 17%;
+    left: 9%;
 }
 
 .sofa{
@@ -812,7 +812,7 @@ letter-spacing: -0.42px;
     height: 577.7px;
     position: absolute;
     top:495px;
-    right: 17%;
+    right: 9%;
 }
 .product_text{
     color: #181616;
@@ -830,7 +830,7 @@ letter-spacing: -0.42px;
     height: 342px;
     position: absolute;
     bottom: 462px;
-    right: 17%;
+    right: 9%;
 }
 .den{
     background-image:url(images/Container-2.png);
@@ -838,7 +838,7 @@ letter-spacing: -0.42px;
     height: 342px;
     position: absolute;
     bottom: 88px;
-    left: 17%;
+    left: 9%;
 }
 .tham{
     background-image:url(images/Container-3.png);
@@ -846,28 +846,37 @@ letter-spacing: -0.42px;
     height: 342px;
     position: absolute;
     bottom: 88px;
-    left: 39.5%;}
+    left: 37%;}
 .goi{
     background-image:url(images/Container-4.png);
     width: 385px;
     height: 342px;
     position: absolute;
     bottom: 88px;
-    right: 17%;
+    right: 9%;
 }
 
 #lane9{
+  padding-bottom: 100px;
     position: absolute;
     top: 453em;
     width: 100%;
-    height: fit-content;
     background: #333;
     flex-shrink: 0;
 }
 .lane9_customer_rate{
-    margin-top: 3%;
-    width: 90%;
-    margin-bottom: 10%;
+  margin: 50px 20px;
+  height: auto;
+    padding:0 17.5%;
+}
+.lane9-prev{
+  position: absolute;
+  left: 17%;
+}
+
+.lane9-next{
+  position: absolute;
+  right: 17%;
 }
 .lane9_header{
     color: #FFF;
@@ -889,18 +898,19 @@ letter-spacing: -0.42px;
     line-height: 30px; /* 166.667% */
 }
 .customer_rate{
+  width: fit-content;
     border-radius: 24px;
     background: #A3BBA2;
     color: white;
     flex-shrink: 0;
 }
 .customer_text{
+    padding: 20px;
     text-align: left;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: 30px; /* 166.667% */
-    margin: 40px;
 }
 .customer_img{
     float: left;
@@ -973,7 +983,7 @@ html{
 .room_menu{
     position: fixed;
     top:46px;
-    margin-left: -7px;
+    margin-left: 0px;
     display: flex;
     flex-direction: column;
     gap: 24px;
@@ -1184,7 +1194,7 @@ html{
     background-color: rgba(246, 225, 195, 1);
     overflow: hidden;
     position: absolute;
-    top:7950px;
+    top:7900px;
   }
   
   .footers .name {

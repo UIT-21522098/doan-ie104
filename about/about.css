@@ -804,5 +804,12 @@ letter-spacing: -0.42px;
 
       a{
         text-decoration: none;
-        color: var(--brick, #A84448);
+        color:black;
+      }
+      header.scrolled .not{
+        background-color: white;
+        color: black;
+    }
+      .not{
+        padding: 0;
       }

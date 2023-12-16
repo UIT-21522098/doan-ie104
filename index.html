@@ -162,7 +162,7 @@
             <p id="lane1_text1">Nơi mọi ý tưởng trở thành hiện thực !!</p>
             <p id="lane1_text2">Chúng tôi sẽ giúp bạn biến mọi ý tưởng về không gian sống thành hiện thực ấm áp và tiện nghi qua các dự án thiết kế nội thất độc đáo.</p>
             <div id="lane1_button1">Xem thêm &#8594;</div>
-            <div id="lane1_button2">Liên hệ người bán</div>
+            <div id="lane1_button2" >Liên hệ người bán</div>
             
     </div>
     <div id="lane2">
@@ -285,7 +285,7 @@
             <div class="lane9_text">Chúng tôi tự hào khi nhận được phản hồi tích cực từ khách hàng về trải nghiệm mua sắm và sản phẩm của mình. Những ý kiến và đánh giá của bạn là nguồn động lực lớn giúp chúng tôi ngày càng hoàn thiện và nâng cao chất lượng phục vụ tốt hơn.</div>
             <div class="lane9_customer_rate">
                 <div class="customer_rate">
-                   <p class="customer_text">Nook&Nest với tôi không chỉ là nơi mua sắm, mà còn là nơi tôi tìm thấy sự tự do trong việc biểu hiện bản thân. Mỗi món đồ đều là một phần của câu chuyện riêng tôi.</p> 
+                   <p class="customer_text">Nook&Nest với tôi không chỉ là nơi mua sắm, mà còn là nơi tôi tìm thấy sự tự do trong việc biểu hiện bản thân. Mỗi món đồ đều là một phần của câu chuyện riêng tôi.Cảm ơn Nook&Nest rất nhiều</p> 
                         <img class="customer_img" src="images/BG.png" alt="">
                         <p class="customer_name">Eddie Smith</p>
                         <p class="customer_role">Nhân viên văn phòng</p>
@@ -300,14 +300,9 @@
                     <p class="customer_text">Đội ngũ chăm sóc khách hàng của Nook&Nest thực sự rất tâm huyết. Họ luôn sẵn lòng giúp đỡ và trả lời mọi câu hỏi của tôi. Tôi đánh giá rất cao dịch vụ và trải nghiệm mua sắm ở đây.</p> 
                     <img class="customer_img" src="images/BG-2.png" alt="">
                     <p class="customer_name">Sophie Moore</p>
-                    <p class="customer_role">Kỹ sư</p></div>
-                    <div class="customer_rate">
-                        <p class="customer_text">Nook&Nest với tôi không chỉ là nơi mua sắm, mà còn là nơi tôi tìm thấy sự tự do trong việc biểu hiện bản thân. Mỗi món đồ đều là một phần của câu chuyện riêng tôi.</p> 
-                             <img class="customer_img" src="images/BG.png" alt="">
-                             <p class="customer_name">Eddie Smith</p>
-                             <p class="customer_role">Nhân viên văn phòng</p>
-                         
-                     </div>
+                    <p class="customer_role">Kỹ sư</p>
+                </div>
+                    
                 </div>
                 
         </div>
@@ -592,12 +587,13 @@
   $(document).ready(function(){
     $('.lane9_customer_rate').slick({
         infinite: true,
-        slidesToShow: 3,
-        slidesToScroll: 1,
+        speed: 300,
+        slidesToShow: 2,
+        adaptiveHeight: true,
         prevArrow:
-        `<button type="button" class="slick-prev"><i class="fa-solid fa-arrow-left"></i></button>`,
+        `<button type="button" class="slick-prev lane9-prev" ><i class="fa-solid fa-arrow-left"></i></button>`,
         nextArrow:
-        `<button type="button" class="slick-next"><i class="fa-solid fa-arrow-right"></i></button>`,
+        `<button type="button" class="slick-next lane9-next"><i class="fa-solid fa-arrow-right"></i></button>`,
     });
   });
     </script>

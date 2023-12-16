@@ -23,25 +23,25 @@
       <header>
         <nav>
         <ul>
-            <li><a href="index.html">Trang chủ</a></li>
-            <li><a class="product_page" href="#product">Sản phẩm <i class="fa-solid fa-caret-down"></i></a></li>
-            <li><a class="room_page" href="room-page.html">Loại phòng<i class="fa-solid fa-caret-down"></i></a>
-              <div class="room_menu">
-                <div class="collection"><a href="livingroom-product.html">Phòng khách</a></div>
-                <div class="collection"><a href="#">Phòng ăn</a></div>
-                <div class="collection"><a href="#">Nhà bếp</a></div>
-                <div class="collection"><a href="#">Phòng ngủ</a></div>
-                  <div class="collection-see-all">Xem tất cả <i class="fa-solid fa-chevron-right"></i></div>
-                </div>
-          </li>
-            <li><a class="collection_page" href="collection-page.html">Bộ sưu tập <i class="fa-solid fa-caret-down"></i></a>
-              <div class="collection_menu">
-                  <div class="collection"><a href="xmas-collection.html">Giáng Sinh</a></div>
-                  <div class="collection"><a href="#">Trung Thu</a></div>
-                  <div class="collection"><a href="#">Halloween</a></div>
-                  <div class="collection"><a href="#">Lễ Tết</a></div>
-                  <div class="collection-see-all">Xem tất cả <i class="fa-solid fa-chevron-right"></i></div>
-                </div></li>
+            <li><a href="../index.html">Trang chủ</a></li>
+            <li><a class="product_page" href="#product">Sản phẩm <i class="fa-solid fa-caret-down"></i></a>
+            </li>
+            <li><a class="room_page" href="#rooms">Loại phòng <i class="fa-solid fa-caret-down"></i></a>
+            <div class="room_menu">
+                <div class="collection"><a class="not" href="../couch-page/livingroom-product.html">Phòng khách</a></div>
+                <div class="collection">Phòng ăn</div>
+                <div class="collection">Nhà bếp</div>
+                <div class="collection">Phòng ngủ</div>
+                <div class="collection-see-all"><a class="not" href="/../couch-page/room-page.html">Xem tất cả <i class="fa-solid fa-chevron-right"></i></a> </div>
+            </div></li>
+            <li><a class="collection_page" href="#collection">Bộ sưu tập <i class="fa-solid fa-caret-down"></i></a> 
+            <div class="collection_menu">
+                <div class="collection"><a class="not" href="../couch-page/xmas-collection.html">Giáng Sinh</a></div>
+                <div class="collection">Trung Thu</div>
+                <div class="collection">Halloween</div>
+                <div class="collection">Lễ Tết</div>
+                <div class="collection-see-all"><a class="not" href="/../couch-page/collection-page.html"> Xem tất cả <i class="fa-solid fa-chevron-right"></i></a></div>
+              </div></li>
             <li><a href="../news/news.html">Tin tức</a></li>
             <li><a href="../about/about.html">Về chúng tôi</a></li>
             <li><a href="../contact/contact.html">Liên hệ</a></li>
@@ -105,13 +105,13 @@
       <div class="sign-up-8">Bạn đã có tài khoản?<span class="span-sign-in sign-in-opt">Đăng Nhập</span></div>
     </div>
     <div class="product_menu">
-      <div class="list-row">
-        <div class="product"><a href="couch-page.html" >Ghế dài</a></div>
-        <div class="product"><a href="#" >Ghế bành</a></div>
-        <div class="product"><a href="#" >Ghế</a></div>
-        <div class="product"><a href="#" >Ghế đôn</a></div>
+      <div class="list-row"> 
+        <div class="product"><a class="not" href="/../couch-page/couch-page.html">Ghế dài</a></div>
+        <div class="product">Ghế bành</div>
+        <div class="product">Ghế tựa</div>
+        <div class="product">Ghế đôn</div>
         <div class="product-img"><img src="img/Layer 2-1.png" alt=""></div>
-      </div>
+    </div>
       <div class="list-row">
         <div class="product"><a href="#" >Bàn cà phê</a></div>
         <div class="product"><a href="#" >Bàn ăn</a></div>
@@ -870,11 +870,6 @@
                 $(mess).fadeIn();
                 messclicktime++;
             })
-            $('.product_page,.product_menu').mouseenter(function() {
-                isHovered = true;
-                $('.product_menu').slideDown(); 
-                div1.classList.add('hover');
-            });
             $('.sub').click(e=>{
                 if(subresclicktime%2==1)
                 {
@@ -889,6 +884,14 @@
                 alert('Bạn đã đăng ký nhận khuyến mãi thành công với email: \n' + subemail)
             })
 
+            $('.product_page,.product_menu').mouseenter(function() {
+                isHovered = true;
+                $('.collection_menu').slideUp();
+                $('.room_menu').slideUp();
+                $('.product_menu').slideDown(); 
+                div1.classList.add('hover');
+            });
+
             $('.product_page,.product_menu').mouseleave(function() {
                 isHovered = false;
                 setTimeout(function() {
@@ -896,45 +899,48 @@
                     $('.product_menu').slideUp();
                     div1.classList.remove('hover');
                 }
-                }, 50);
+                }, 10);
             });
             var div2 = document.querySelector('.collection_page');
-        var isHovered = false;
-        $('.collection_page,.collection_menu').mouseenter(function() {
-            isHovered = true;
-            $('.collection_menu').slideDown(); 
-            div2.classList.add('hover');
-});
-
-        $('.collection_page,.collection_menu').mouseleave(function() {
-            isHovered = false;
-            setTimeout(function() {
-            if (!isHovered) {
-                $('.collection_menu').slideUp();
-                div2.classList.remove('hover');
-            }
-            }, 20); 
-        });
-
-        var div3 = document.querySelector('.room_page');
-        var isHovered = false;
-        $('.room_page,.room_menu').mouseenter(function() {
-            isHovered = true;
-            $('.room_menu').slideDown(); 
-            div3.classList.add('hover');
-});
-
-        $('.room_page,.room_menu').mouseleave(function() {
-            isHovered = false;
-            setTimeout(function() {
-            if (!isHovered) {
+            var isHovered = false;
+            $('.collection_page,.collection_menu').mouseenter(function() {
+                isHovered = true;
+                $('.product_menu').slideUp();
                 $('.room_menu').slideUp();
-                div3.classList.remove('hover');
-            }
-            }, 20); 
-        });
+                $('.collection_menu').slideDown(); 
+                div2.classList.add('hover');
+            });
 
+            $('.collection_page,.collection_menu').mouseleave(function() {
+                isHovered = false;
+                setTimeout(function() {
+                if (!isHovered) {
+                    $('.collection_menu').slideUp();
+                    div2.classList.remove('hover');
+                }
+                }, 10); 
+            });
+            var div3 = document.querySelector('.room_page');
+            var isHovered = false;
+            $('.room_page,.room_menu').mouseenter(function() {
+                isHovered = true;
+                $('.product_menu').slideUp();
+                div1.classList.remove('hover');
+                div2.classList.remove('hover');
+                $('.collection_menu').slideUp();
+                $('.room_menu').slideDown(); 
+                div3.classList.add('hover');
+            });
 
+            $('.room_page,.room_menu').mouseleave(function() {
+                isHovered = false;
+                setTimeout(function() {
+                if (!isHovered) {
+                    $('.room_menu').slideUp();
+                    div3.classList.remove('hover');
+                }
+                }, 10); 
+            });
             $('#account').click(e=>{
                 if(accountclicktime%2==1)
                 {

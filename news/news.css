@@ -302,7 +302,7 @@ html{
 .room_menu{
     position: fixed;
     top:46px;
-    margin-left: -25px;
+    margin-left: -7px;
     display: flex;
     flex-direction: column;
     gap: 24px;
@@ -317,7 +317,7 @@ html{
 .collection_menu{
     position: fixed;
     top:46px;
-    margin-left: -7px;
+    margin-left: 1.3px;
     display: flex;
     flex-direction: column;
     gap: 24px;
@@ -329,6 +329,10 @@ html{
     border-radius: 0px 0px 20px 20px;
     background-color:var(--neutral-white, #FFF);
 }
+
+.not{
+  padding: 0;
+}
 .product-img{
     margin-top: 80px;
     text-align: center;
@@ -336,7 +340,7 @@ html{
 }
 .product{
     z-index: 100;
-    margin: 30px;
+    margin: 10px;
 }
 .mess{
     z-index: 10;
