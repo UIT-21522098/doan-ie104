@@ -480,7 +480,7 @@ letter-spacing: -0.42px;
     background-color: #F2F2F2;
     border-radius: 10px;
     width: 680px;
-    height: 190px
+    height: 200px
 }
 
 .box{
@@ -538,21 +538,23 @@ letter-spacing: -0.42px;
     width: 70px;
     margin-left: 130px;
     text-decoration: underline;
+    cursor: pointer;
 }
 
-#edit-info{
+#editInfo{
     margin-top: 35px;
 }
 
-#edit-shipping{
-    margin-top: 15px;
+#editShipping{
+    margin-top: -15px;
 }
 
-#edit-payment{
-    margin-top: 35px;
+#editPayment{
+    position: absolute;
+    top: 490px;
 }
 
-#editBox {
+#editBox, #editBox2, #editBox3 {
     display: none;
     position: fixed;
     top: 50%;
@@ -562,6 +564,12 @@ letter-spacing: -0.42px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     z-index: 999;
+    width: 350px;
+}
+
+
+#editBox h2, #editBox2 h2, #editBox3 h2{
+  text-align: center;
 }
 
 .footers {
@@ -838,4 +846,103 @@ letter-spacing: -0.42px;
 
   .account-container a{
     text-decoration: none;
+  }
+
+  .account-body .box p{
+    margin-top: 10px;
+  }
+
+  /* .shipping{
+    position: relative;
+    top: -30px;
+    left: 3px;
+  } */
+
+  .information, .shipping, .payment{
+    position: relative;
+    top: -30px;
+    left: 3px;
+  }
+
+  #editForm input{
+    width: 300px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 3px;
+  }
+
+  #editForm2 input{
+    width: 280px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 3px 15px 0 15px;
+  }
+
+  #editForm3 input{
+    width: 300px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 3px;
+    margin-left: 7px;
+   }
+
+  #editForm{
+    padding: 0 20px;
+  }
+
+  #editForm p{
+    margin-bottom: 0;
+  }
+
+  #editForm2 p{
+    margin-bottom: 2px;
+    margin-left: 15px;
+  }
+
+  #editForm3 p{
+    margin-bottom: 2px;
+    margin-left: 8px;
+  }
+
+  #editBox2{
+    padding-right: 0;
+  }
+
+  #editBox3{
+    padding-right: 0;
+
+  }
+
+  #submit{
+    margin-top: 20px;
+    width: 80px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5% auto;
+    background-color: lightgray;
+    border: 1px solid gray;
+    border-radius: 10px;
+    font-weight: bold;
+  }
+
+  #passwordWarning{
+    color: red;
+  }
+
+  #payment{
+    position: absolute;
+    top: -70px;
+  }
+
+  .sticky a, #account_section a{
+    text-decoration: none;
+  }
+
+  #account_section a{
+    color: rgba(168, 68, 72, 1);
   }
