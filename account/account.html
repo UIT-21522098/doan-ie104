@@ -383,11 +383,6 @@
             $(mess).fadeIn();
             messclicktime++;
         })
-        $('.product_page,.product_menu').mouseenter(function() {
-            isHovered = true;
-            $('.product_menu').slideDown(); 
-            div1.classList.add('hover');
-        });
         $('.sub').click(e=>{
             if(subresclicktime%2==1)
             {
@@ -402,51 +397,63 @@
             alert('Bạn đã đăng ký nhận khuyến mãi thành công với email : \n' + subemail)
         })
 
-        $('.product_page,.product_menu').mouseleave(function() {
-            isHovered = false;
-            setTimeout(function() {
-            if (!isHovered) {
+        $('.product_page,.product_menu').mouseenter(function() {
+                isHovered = true;
+                $('.collection_menu').slideUp();
+                $('.room_menu').slideUp();
+                $('.product_menu').slideDown(); 
+                div1.classList.add('hover');
+            });
+
+            $('.product_page,.product_menu').mouseleave(function() {
+                isHovered = false;
+                setTimeout(function() {
+                if (!isHovered) {
+                    $('.product_menu').slideUp();
+                    div1.classList.remove('hover');
+                }
+                }, 10);
+            });
+            var div2 = document.querySelector('.collection_page');
+            var isHovered = false;
+            $('.collection_page,.collection_menu').mouseenter(function() {
+                isHovered = true;
+                $('.product_menu').slideUp();
+                $('.room_menu').slideUp();
+                $('.collection_menu').slideDown(); 
+                div2.classList.add('hover');
+            });
+
+            $('.collection_page,.collection_menu').mouseleave(function() {
+                isHovered = false;
+                setTimeout(function() {
+                if (!isHovered) {
+                    $('.collection_menu').slideUp();
+                    div2.classList.remove('hover');
+                }
+                }, 10); 
+            });
+            var div3 = document.querySelector('.room_page');
+            var isHovered = false;
+            $('.room_page,.room_menu').mouseenter(function() {
+                isHovered = true;
                 $('.product_menu').slideUp();
                 div1.classList.remove('hover');
-            }
-            }, 50);
-        });
-        var div2 = document.querySelector('.collection_page');
-        var isHovered = false;
-        $('.collection_page,.collection_menu').mouseenter(function() {
-            isHovered = true;
-            $('.collection_menu').slideDown(); 
-            div2.classList.add('hover');
-});
-
-        $('.collection_page,.collection_menu').mouseleave(function() {
-            isHovered = false;
-            setTimeout(function() {
-            if (!isHovered) {
-                $('.collection_menu').slideUp();
                 div2.classList.remove('hover');
-            }
-            }, 20); 
-        });
+                $('.collection_menu').slideUp();
+                $('.room_menu').slideDown(); 
+                div3.classList.add('hover');
+            });
 
-        var div3 = document.querySelector('.room_page');
-        var isHovered = false;
-        $('.room_page,.room_menu').mouseenter(function() {
-            isHovered = true;
-            $('.room_menu').slideDown(); 
-            div3.classList.add('hover');
-});
-
-        $('.room_page,.room_menu').mouseleave(function() {
-            isHovered = false;
-            setTimeout(function() {
-            if (!isHovered) {
-                $('.room_menu').slideUp();
-                div3.classList.remove('hover');
-            }
-            }, 20); 
-        });
-
+            $('.room_page,.room_menu').mouseleave(function() {
+                isHovered = false;
+                setTimeout(function() {
+                if (!isHovered) {
+                    $('.room_menu').slideUp();
+                    div3.classList.remove('hover');
+                }
+                }, 10); 
+            });
 
         $('#account').click(e=>{
             if(accountclicktime%2==1)
