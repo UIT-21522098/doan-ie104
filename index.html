@@ -463,7 +463,7 @@
             $('.sign-in-btn').click(e=>{
                 var signinid = document.getElementById('sign-in-id').value;
                 var signinpass = document.getElementById('sign-in-pass').value
-                if(signinid || signinpass == null)
+                if (signinid === '' || signinpass === '')
                 window.alert('Vui lòng điền đẩy đủ tài khoản và mật khẩu để đăng nhập !!');
                 else    
                 window.alert('Đăng nhập thành công !!');
@@ -472,7 +472,7 @@
                 var signupid = document.getElementById('sign-up-id').value;
                 var signuppass = document.getElementById('sign-up-pass').value
                 var signuppass2 =  document.getElementById('sign-up-pass2').value
-                if(signuppass || signuppass2 || signupid == null){
+                if(signuppass ==='' || signuppass2==='' || signupid === ''){
                 window.alert('Vui lòng điền đẩy đủ tài khoản và mật khẩu để đăng ký !!');
                 }
                 else    
