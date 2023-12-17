@@ -73,7 +73,7 @@ flex-shrink: 0;
 }
 #wishlist{
   position: absolute;
-  top: 18px;
+  top: 10px;
   left: 53px;
   display: flex;
   width: 79px;
@@ -886,3 +886,21 @@ letter-spacing: -0.42px;
     border: none;
     cursor: pointer;
 }
+
+.menu-container a{
+  text-decoration: none;
+}
+
+.cart a{
+  color: black;
+}
+
+.account a, .favorite a{
+  color: gray
+}
+
+#account_section a{
+  text-decoration: none;
+  color: #A84448;
+}
+

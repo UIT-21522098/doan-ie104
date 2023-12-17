@@ -462,17 +462,11 @@ fetch('cart.html')
                 .then(response => response.text())
                 .then(html => {
                     // Thay đổi CSS của trang hiện tại
-                    var modifiedHTML = html.replace('<div class="cart-product"><div class="cart-image"></div><div class="delete-icon"><i class="material-icons"></i></div><div class="cartDetail"></div>', '<div class="cart-list"><div class="cartDetail"><h3>Ghế dài</h3><h4><span class="price" data-price="12.000.000">12.000.000đ</span></h4><div class="quantity-container"><button class="quantity-btn" onclick="decrementQuantity()">-</button><input type="number" id="quantity" class="quantity-input" value="1" min="1"><button class="quantity-btn" onclick="incrementQuantity()">+</button></div></div><div class="total"><p>Thành tiền</p><p><span id="total-price">12.000.000đ</span></p></div>');
+                    var modifiedHTML = html.replace('<div class="cart-product"><div class="cart-image"></div><div class="delete-icon"><i class="material-icons"></i></div><div class="cartDetail"></div><div class="bill"><h2>Đơn hàng</h2><h4>Tổng thanh toán (0 sản phẩm): 0đ</h4>', '<div class="cart-list"><div class="cartDetail"><h3>Ghế dài</h3><h4><span class="price" data-price="12.000.000">12.000.000đ</span></h4><div class="quantity-container"><button class="quantity-btn" onclick="decrementQuantity()">-</button><input type="number" id="quantity" class="quantity-input" value="1" min="1"><button class="quantity-btn" onclick="incrementQuantity()">+</button></div></div><div class="total"><p>Thành tiền</p><p><span id="total-price">12.000.000đ</span></p></div><div class="bill"><h2>Đơn hàng</h2><h4>Tổng thanh toán (1 sản phẩm): 12.000.000đ</h4>');
                     document.documentElement.innerHTML = modifiedHTML;
                 })
                 .catch(error => console.error('Fetch error:', error));
             }
-
-        // function changeCSS() {
-        //     // Gửi thông điệp đến trang 2
-        //     window.parent.postMessage({ type: 'changeCSS' }, '*');
-        // }
-     
 
         $(document).ready(function(){
             var div1 = document.querySelector('.product_page');
