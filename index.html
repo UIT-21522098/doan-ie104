@@ -1,602 +1,641 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <link
-        rel="stylesheet"
-        type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
-      >
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
 </head>
+
 <body>
-    <div id="container"> 
-        
-            <div id="header">
-                <img class="logo_pic" src="images/image 3.png" alt="">
-                <img class="logo_name" src="images/Ảnh màn hình 2023-11-02 lúc 09.05 1.png" alt="">
-                
-                <div id="search_bar">
-                    <input id="search_text" type="text" placeholder="Tìm Kiếm">
-                    <img class="search_img" src="images/Search.png" alt="">
-                </div>
-                <div id="account_section">
-                    <div id="wishlist">
-                        <div id="wishlist_img"><img src="images/Heart.png" alt=""></div>
-                        <div id="wishlist_text"><p>Yêu thích</p></div> 
-                    </div>
-                    <div id="cart">
-                        <div id="cart_img"><img src="images/Feather Icon.png" alt=""></div>
-                        <div id="cart_text">Giỏ hàng</div>
-                    </div>
-                    <div id="account">
-                        <div><img src="images/User.png" alt=""></div>
-                        <div>Tài khoản</div>
-                        
+    <div id="container">
+
+        <div id="header">
+            <img class="logo_pic" src="images/image 3.png" alt="">
+            <img class="logo_name" src="images/Ảnh màn hình 2023-11-02 lúc 09.05 1.png" alt="">
+
+            <div id="search_bar">
+                <input id="search_text" type="text" placeholder="Tìm Kiếm">
+                <img class="search_img" src="images/Search.png" alt="">
+            </div>
+            <div id="account_section">
+                <div id="wishlist">
+                    <div id="wishlist_img"><img src="images/Heart.png" alt=""></div>
+                    <div id="wishlist_text">
+                        <p>Yêu thích</p>
                     </div>
                 </div>
-                <div class="sticky">
+                <div id="cart">
+                    <div id="cart_img"><img src="images/Feather Icon.png" alt=""></div>
+                    <div id="cart_text">Giỏ hàng</div>
+                </div>
+                <div id="account">
+                    <div><img src="images/User.png" alt=""></div>
+                    <div>Tài khoản</div>
+
+                </div>
+            </div>
+            <div class="sticky">
                 <header>
                     <nav>
-                    <ul>
-                        <li><a href="index.html">Trang chủ</a></li>
-                        <li><a class="product_page" href="#product">Sản phẩm <i class="fa-solid fa-caret-down"></i></a>
-                        </li>
-                        <li><a class="room_page" href="#rooms">Loại phòng <i class="fa-solid fa-caret-down"></i></a>
-                        <div class="room_menu">
-                            <div class="collection"><a class="not" href="../couch-page/livingroom-product.html">Phòng khách</a></div>
-                            <div class="collection">Phòng ăn</div>
-                            <div class="collection">Nhà bếp</div>
-                            <div class="collection">Phòng ngủ</div>
-                            <div class="collection-see-all"><a class="not" href="/../couch-page/room-page.html">Xem tất cả <i class="fa-solid fa-chevron-right"></i></a> </div>
-                        </div></li>
-                        <li><a class="collection_page" href="#collection">Bộ sưu tập <i class="fa-solid fa-caret-down"></i></a> 
-                        <div class="collection_menu">
-                            <div class="collection"><a class="not" href="../couch-page/xmas-collection.html">Giáng Sinh</a></div>
-                            <div class="collection">Trung Thu</div>
-                            <div class="collection">Halloween</div>
-                            <div class="collection">Lễ Tết</div>
-                            <div class="collection-see-all"><a class="not" href="/../couch-page/collection-page.html"> Xem tất cả <i class="fa-solid fa-chevron-right"></i></a></div>
-                          </div></li>
-                        <li><a href="news/news.html">Tin tức</a></li>
-                        <li><a href="about/about.html">Về chúng tôi</a></li>
-                        <li><a href="contact/contact.html">Liên hệ</a></li>
-                        
-                    </ul>
-                </nav>
+                        <ul>
+                            <li><a href="index.html">Trang chủ</a></li>
+                            <li><a class="product_page" href="#product">Sản phẩm <i
+                                        class="fa-solid fa-caret-down"></i></a>
+                            </li>
+                            <li><a class="room_page" href="#rooms">Loại phòng <i class="fa-solid fa-caret-down"></i></a>
+                                <div class="room_menu">
+                                    <div class="collection"><a class="not"
+                                            href="../couch-page/livingroom-product.html">Phòng khách</a></div>
+                                    <div class="collection">Phòng ăn</div>
+                                    <div class="collection">Nhà bếp</div>
+                                    <div class="collection">Phòng ngủ</div>
+                                    <div class="collection-see-all"><a class="not"
+                                            href="/../couch-page/room-page.html">Xem tất cả <i
+                                                class="fa-solid fa-chevron-right"></i></a> </div>
+                                </div>
+                            </li>
+                            <li><a class="collection_page" href="#collection">Bộ sưu tập <i
+                                        class="fa-solid fa-caret-down"></i></a>
+                                <div class="collection_menu">
+                                    <div class="collection"><a class="not"
+                                            href="../couch-page/xmas-collection.html">Giáng Sinh</a></div>
+                                    <div class="collection">Trung Thu</div>
+                                    <div class="collection">Halloween</div>
+                                    <div class="collection">Lễ Tết</div>
+                                    <div class="collection-see-all"><a class="not"
+                                            href="/../couch-page/collection-page.html"> Xem tất cả <i
+                                                class="fa-solid fa-chevron-right"></i></a></div>
+                                </div>
+                            </li>
+                            <li><a href="news/news.html">Tin tức</a></li>
+                            <li><a href="about/about.html">Về chúng tôi</a></li>
+                            <li><a href="contact/contact.html">Liên hệ</a></li>
+
+                        </ul>
+                    </nav>
                 </header>
             </div>
-            </div>
-            <div class="product_menu">
-                <div class="list-row"> 
-                    <div class="product"><a class="not" href="/../couch-page/couch-page.html">Ghế dài</a></div>
-                    <div class="product">Ghế bành</div>
-                    <div class="product">Ghế tựa</div>
-                    <div class="product">Ghế đôn</div>
-                    <div class="product-img"><img src="images/Layer 2-1.png" alt=""></div>
-                </div>
-                <div class="list-row"> 
-                    <div class="product">Bàn cà phê</div>
-                    <div class="product">Bàn ăn</div>
-                    <div class="product">Bàn làm việc</div>
-                    <div class="product">Bàn họp</div>
-                    <div class="product-img"><img src="images/Layer 2-2.png" alt=""></div>
-                </div>
-                <div class="list-row"> 
-                    <div class="product">Giường cơ bản</div>
-                    <div class="product">Giường tầng</div>
-                    <div class="product">Giường kéo</div>
-                    <div class="product">Giường bốn cọc</div>
-                    <div class="product-img"><img src="images/Layer 2-3.png" alt=""></div>
-                </div>
-                <div class="list-row"> 
-                    <div class="product">Đèn bàn</div>
-                    <div class="product">Đèn bàn làm việc</div>
-                    <div class="product">Đèn đứng</div>
-                    <div class="product">Đèn trần</div>
-                    <div class="product-img"><img src="images/Layer 2.png" alt=""></div>
-                </div>
-                <div class="list-row"> 
-                    <div class="product">Thảm</div>
-                    <div class="product">Gối</div>
-                    <div class="product">Cây</div>
-                    <div class="product">Gương</div>
-                    <div class="product-img"><img src="images/Layer 2-4.png" alt=""></div>
-                </div>
-            </div>
-        
-            <div class="sign-in">
-                <div class="sign-in-1">ĐĂNG NHẬP TÀI KHOẢN</div>
-                <div class="sign-in-2">Nhập email và mật khẩu của bạn</div>
-                <div class="sign-in-3"><input type="text" id="sign-in-id" placeholder="Nhập email hoặc số điện thoại" maxlength="40"></div>
-                <div class="sign-in-4"><input type="password" id="sign-in-pass" placeholder="Mật khẩu" maxlength="40"></div>
-                <div class="sign-in-5">Website được bảo vệ bởi reCAPTCHA,<span class="span-sign-up">Chính sách bảo mật</span> và <span class="span-sign-up">Điều khoản dịch vụ</span> của Google</div>
-                <div class="sign-in-6"><button class="sign-in-btn">ĐĂNG NHẬP</button></div>
-                <div class="sign-in-7">Khách hàng mới? <span class="span-sign-in sign-up-opt">Tạo tài khoản</span></div>
-                <div class="sign-in-8">Quên mật khẩu?  <span class="span-sign-in">Khôi phục mật khẩu</span> </div>
-            </div>
-            <div class="sign-up">
-                <div class="sign-up-1">ĐĂNG KÝ</div>
-                <div class="sign-up-3"><input type="text" id="sign-up-id" placeholder="Nhập email hoặc số điện thoại" maxlength="40"></div>
-                <div class="sign-up-4"><input type="password" id="sign-up-pass" placeholder="Mật khẩu" maxlength="40"></div>
-                <div class="sign-up-5"><input type="password" id="sign-up-pass2" placeholder="Xác nhận mật khẩu" maxlength="40"></div>
-                <div class="sign-up-6"><button class="sign-up-btn">ĐĂNG KÝ</button></div>
-                <div class="sign-up-7">Bằng việc đăng kí, bạn đã đồng ý với Nook & Nest về <span class="span-sign-up">Chính sách bảo mật</span> & <span class="span-sign-up">Điều khoản dịch vụ</span></div>
-                <div class="sign-up-8">Bạn đã có tài khoản?<span class="span-sign-in sign-in-opt">Đăng Nhập</span></div>
-            </div>
-    
-    <div id="ad_bar">
-        <div id="bar_content">
-            <div id="noti_text">GIẢM NGAY 20% cho đơn đặt hàng đầu tiên. Đăng ký để nhận thông tin về ưu đãi mới!</div>
-            <div class="sub">Đăng ký</div>
         </div>
-        <div class="sub_res_table">
-            <p class="sub_res_header">NHẬN TIN KHUYẾN MÃI</p>
-            <div class="sub_res_section">
-                <input type="email" id="sub_res_email" placeholder="Nhập email..." maxlength="40">
-                <div class="sub_res_button">ĐĂNG KÝ</div>
+        <div class="product_menu">
+            <div class="list-row">
+                <div class="product"><a class="not" href="/../couch-page/couch-page.html">Ghế dài</a></div>
+                <div class="product">Ghế bành</div>
+                <div class="product">Ghế tựa</div>
+                <div class="product">Ghế đôn</div>
+                <div class="product-img"><img src="images/Layer 2-1.png" alt=""></div>
+            </div>
+            <div class="list-row">
+                <div class="product">Bàn cà phê</div>
+                <div class="product">Bàn ăn</div>
+                <div class="product">Bàn làm việc</div>
+                <div class="product">Bàn họp</div>
+                <div class="product-img"><img src="images/Layer 2-2.png" alt=""></div>
+            </div>
+            <div class="list-row">
+                <div class="product">Giường cơ bản</div>
+                <div class="product">Giường tầng</div>
+                <div class="product">Giường kéo</div>
+                <div class="product">Giường bốn cọc</div>
+                <div class="product-img"><img src="images/Layer 2-3.png" alt=""></div>
+            </div>
+            <div class="list-row">
+                <div class="product">Đèn bàn</div>
+                <div class="product">Đèn bàn làm việc</div>
+                <div class="product">Đèn đứng</div>
+                <div class="product">Đèn trần</div>
+                <div class="product-img"><img src="images/Layer 2.png" alt=""></div>
+            </div>
+            <div class="list-row">
+                <div class="product">Thảm</div>
+                <div class="product">Gối</div>
+                <div class="product">Cây</div>
+                <div class="product">Gương</div>
+                <div class="product-img"><img src="images/Layer 2-4.png" alt=""></div>
             </div>
         </div>
-    </div>
-    <div class="mess-table">
-        <div class="mess-table-content">
-            <div>
-                <img class="left-side" src="images/Prominence Elements/Page Profile Picture.png" alt="">
-                <img class="right-side" src="images/Prominence Elements/Account Switch.png" alt="">
-                <img class="right-side" src="images/Prominence Elements/Overflow.png" alt="">
-                <img class="right-side" src="images/Prominence Elements/Minimize.png" alt="">
-            </div>
-            <div class="mess-table-content-2">Trò chuyện với Nook & Nest</div>
-            <div class="mess-table-content-3">Xin chào! Tôi có thể giúp gì được cho bạn?</div>
-            <div class="mess-table-content-4"><i class="fa-brands fa-facebook-messenger"></i> Tiếp tục như là Na</div>
-            <div class="mess-table-content-5">Tiếp tục như là Khách</div>
-            <div class="mess-table-content-6">Bằng cách tiếp tục với tư cách là khách, bạn đồng ý với <span>Điều khoản, Chính sách dữ liệu</span>  và <span>Chính sách cookie</span> của Facebook.</div>
+
+        <div class="sign-in">
+            <div class="sign-in-1">ĐĂNG NHẬP TÀI KHOẢN</div>
+            <div class="sign-in-2">Nhập email và mật khẩu của bạn</div>
+            <div class="sign-in-3"><input type="text" id="sign-in-id" placeholder="Nhập email hoặc số điện thoại"
+                    maxlength="40"></div>
+            <div class="sign-in-4"><input type="password" id="sign-in-pass" placeholder="Mật khẩu" maxlength="40"></div>
+            <div class="sign-in-5">Website được bảo vệ bởi reCAPTCHA,<span class="span-sign-up">Chính sách bảo
+                    mật</span> và <span class="span-sign-up">Điều khoản dịch vụ</span> của Google</div>
+            <div class="sign-in-6"><button class="sign-in-btn">ĐĂNG NHẬP</button></div>
+            <div class="sign-in-7">Khách hàng mới? <span class="span-sign-in sign-up-opt">Tạo tài khoản</span></div>
+            <div class="sign-in-8">Quên mật khẩu? <span class="span-sign-in">Khôi phục mật khẩu</span> </div>
         </div>
-    </div>
-    <div class="mess">
-        <i class="fa-brands fa-facebook-messenger"></i>
-    </div>
-    <div id="lane1">
+        <div class="sign-up">
+            <div class="sign-up-1">ĐĂNG KÝ</div>
+            <div class="sign-up-3"><input type="text" id="sign-up-id" placeholder="Nhập email hoặc số điện thoại"
+                    maxlength="40"></div>
+            <div class="sign-up-4"><input type="password" id="sign-up-pass" placeholder="Mật khẩu" maxlength="40"></div>
+            <div class="sign-up-5"><input type="password" id="sign-up-pass2" placeholder="Xác nhận mật khẩu"
+                    maxlength="40"></div>
+            <div class="sign-up-6"><button class="sign-up-btn">ĐĂNG KÝ</button></div>
+            <div class="sign-up-7">Bằng việc đăng kí, bạn đã đồng ý với Nook & Nest về <span class="span-sign-up">Chính
+                    sách bảo mật</span> & <span class="span-sign-up">Điều khoản dịch vụ</span></div>
+            <div class="sign-up-8">Bạn đã có tài khoản?<span class="span-sign-in sign-in-opt">Đăng Nhập</span></div>
+        </div>
+
+        <div id="ad_bar">
+            <div id="bar_content">
+                <div id="noti_text">GIẢM NGAY 20% cho đơn đặt hàng đầu tiên. Đăng ký để nhận thông tin về ưu đãi mới!
+                </div>
+                <div class="sub">Đăng ký</div>
+            </div>
+            <div class="sub_res_table">
+                <p class="sub_res_header">NHẬN TIN KHUYẾN MÃI</p>
+                <div class="sub_res_section">
+                    <input type="email" id="sub_res_email" placeholder="Nhập email..." maxlength="40">
+                    <div class="sub_res_button">ĐĂNG KÝ</div>
+                </div>
+            </div>
+        </div>
+        <div class="mess-table">
+            <div class="mess-table-content">
+                <div>
+                    <img class="left-side" src="images/Prominence Elements/Page Profile Picture.png" alt="">
+                    <img class="right-side" src="images/Prominence Elements/Account Switch.png" alt="">
+                    <img class="right-side" src="images/Prominence Elements/Overflow.png" alt="">
+                    <img class="right-side" src="images/Prominence Elements/Minimize.png" alt="">
+                </div>
+                <div class="mess-table-content-2">Trò chuyện với Nook & Nest</div>
+                <div class="mess-table-content-3">Xin chào! Tôi có thể giúp gì được cho bạn?</div>
+                <div class="mess-table-content-4"><i class="fa-brands fa-facebook-messenger"></i> Tiếp tục như là Na
+                </div>
+                <div class="mess-table-content-5">Tiếp tục như là Khách</div>
+                <div class="mess-table-content-6">Bằng cách tiếp tục với tư cách là khách, bạn đồng ý với <span>Điều
+                        khoản, Chính sách dữ liệu</span> và <span>Chính sách cookie</span> của Facebook.</div>
+            </div>
+        </div>
+        <div class="mess">
+            <i class="fa-brands fa-facebook-messenger"></i>
+        </div>
+        <div id="lane1">
             <p id="lane1_text1">Nơi mọi ý tưởng trở thành hiện thực !!</p>
-            <p id="lane1_text2">Chúng tôi sẽ giúp bạn biến mọi ý tưởng về không gian sống thành hiện thực ấm áp và tiện nghi qua các dự án thiết kế nội thất độc đáo.</p>
+            <p id="lane1_text2">Chúng tôi sẽ giúp bạn biến mọi ý tưởng về không gian sống thành hiện thực ấm áp và tiện
+                nghi qua các dự án thiết kế nội thất độc đáo.</p>
             <div id="lane1_button1">Xem thêm &#8594;</div>
-            <div id="lane1_button2" >Liên hệ người bán</div>
-            
-    </div>
-    <div id="lane2">
-        <div id="lane2_content">
-            <div id="lane2_text1">
-                Mùa đông đang đến
-            </div>
-            <div id="lane2_text2">
-                Ghế sofa mềm mại, màu sắc ấm áp và đèn trang trí lung linh - tất cả đều làm nên không khí ấm cúng cho mùa lạnh.
-            </div>
-            <div class="slide_show_product">
-                <div id="lane2_product" class="lane2_product">
-                    <img class="img-feature" src="images/Frame 43.png" alt="">
-                    Bán chạy nhất
-                </div>
-                <div id="lane2_product" class="lane2_product">
-                    <img class="img-feature" src="images/Frame 44.png" alt="">
-                    Sản phẩm mới
-                </div>
-                <div id="lane2_product" class="lane2_product">
-                    <img class="img-feature" src="images/Frame45.jpg" alt="">
-                    Giảm đến 20%
-                </div>
-                <div id="lane2_product" class="lane2_product">
-                    <img class="img-feature" src="images/frame46.jpg" alt="">
-                    Bán chạy nhất
-                </div>
-                <div id="lane2_product" class="lane2_product">
-                    <img class="img-feature" src="images/Frame 47.jpg" alt="">
-                    Sản phẩm mới
-                </div>
-                <div id="lane2_product" class="lane2_product">
-                    <img class="img-feature" src="images/Frame 48.png" alt="">
-                    Giảm đến 20%
-                </div>
-                
-                </div>
-            </div>
-            
+            <div id="lane1_button2">Liên hệ người bán</div>
 
-    </div>
+        </div>
+        <div id="lane2">
+            <div id="lane2_content">
+                <div id="lane2_text1">
+                    Mùa đông đang đến
+                </div>
+                <div id="lane2_text2">
+                    Ghế sofa mềm mại, màu sắc ấm áp và đèn trang trí lung linh - tất cả đều làm nên không khí ấm cúng
+                    cho mùa lạnh.
+                </div>
+                <div class="slide_show_product">
+                    <div id="lane2_product" class="lane2_product">
+                        <img class="img-feature" src="images/Frame 43.png" alt="">
+                        Bán chạy nhất
+                    </div>
+                    <div id="lane2_product" class="lane2_product">
+                        <img class="img-feature" src="images/Frame 44.png" alt="">
+                        Sản phẩm mới
+                    </div>
+                    <div id="lane2_product" class="lane2_product">
+                        <img class="img-feature" src="images/Frame45.jpg" alt="">
+                        Giảm đến 20%
+                    </div>
+                    <div id="lane2_product" class="lane2_product">
+                        <img class="img-feature" src="images/frame46.jpg" alt="">
+                        Bán chạy nhất
+                    </div>
+                    <div id="lane2_product" class="lane2_product">
+                        <img class="img-feature" src="images/Frame 47.jpg" alt="">
+                        Sản phẩm mới
+                    </div>
+                    <div id="lane2_product" class="lane2_product">
+                        <img class="img-feature" src="images/Frame 48.png" alt="">
+                        Giảm đến 20%
+                    </div>
 
-    <div id="lane3">
-        <div id="lane3_content">
-            "Nội thất đẹp không chỉ là để ngắm nhìn, mà còn để cảm nhận và trải nghiệm."
+                </div>
+            </div>
+
+
         </div>
-    </div>
-    <div id="lane4">
-        <div class="lane4_content">
-            <div class="lane4_text1">
-                Những sản phẩm bán chạy nhất
-            </div>
-            <div class="lane4_text2">
-                Khám phá Best Sellers - Những kiệt tác nội thất được yêu thích nhất, sẵn sàng làm nổi bật ngôi nhà của bạn!
-            </div>
-            <div class="lane4_button">
-                Xem thêm &#8594;
+
+        <div id="lane3">
+            <div id="lane3_content">
+                "Nội thất đẹp không chỉ là để ngắm nhìn, mà còn để cảm nhận và trải nghiệm."
             </div>
         </div>
-    </div>
-    <div id="lane5">
-    <div class="lane5_content">
-        <div class="lane5_header">Sản phẩm dựa trên loại phòng</div>
-        <div class="lane5_menu">
-        <div class="lane5_opt1"></div>
-        <div class="lane5_opt2"></div>
-        <div class="lane5_opt3"></div>
-        <div class="lane5_opt4"></div>
-    </div>
-    </div>
-    </div>
-    <div id="lane6">"Tạo Nên Không Gian, Làm Nên Nét Đẹp"</div>
-    <div id="lane7">
-        <div class="lane7_header">Bộ sưu tập</div>
-        <div class="lane7_text">Từ ghế sofa đến đèn trang trí, mỗi sản phẩm là một điểm nhấn nghệ thuật, sẵn sàng làm phong cách sống của bạn trở nên độc đáo. Hãy để chúng tôi là nguồn cảm hứng cho không gian sống của bạn.
+        <div id="lane4">
+            <div class="lane4_content">
+                <div class="lane4_text1">
+                    Những sản phẩm bán chạy nhất
+                </div>
+                <div class="lane4_text2">
+                    Khám phá Best Sellers - Những kiệt tác nội thất được yêu thích nhất, sẵn sàng làm nổi bật ngôi nhà
+                    của bạn!
+                </div>
+                <div class="lane4_button">
+                    Xem thêm &#8594;
+                </div>
+            </div>
         </div>
-        <div class="lane7_flex">
-            <div class="lane5_img"><img src="images/lane5_1.png" alt=""></div>
-            <div class="lane5_img"><img src="images/lane5_2.png" alt=""></div>
-            <div class="lane5_img"><img src="images/lane5_3.png" alt=""></div>
-            <div class="lane5_img"><img src="images/lane5_4.png" alt=""></div>
+        <div id="lane5">
+            <div class="lane5_content">
+                <div class="lane5_header">Sản phẩm dựa trên loại phòng</div>
+                <div class="lane5_menu">
+                    <div class="lane5_opt1"></div>
+                    <div class="lane5_opt2"></div>
+                    <div class="lane5_opt3"></div>
+                    <div class="lane5_opt4"></div>
+                </div>
+            </div>
         </div>
-        <div class="lane7_button">Xem thêm</div>
-    </div>
-    <div id="lane8">
-        <div class="lane8_header">Sản phẩm của chúng tôi</div>
-        <div class="lane8_product">
-        <div class="ghe_banh">
-            <p class="product_text">Ghế bành</p>
+        <div id="lane6">"Tạo Nên Không Gian, Làm Nên Nét Đẹp"</div>
+        <div id="lane7">
+            <div class="lane7_header">Bộ sưu tập</div>
+            <div class="lane7_text">Từ ghế sofa đến đèn trang trí, mỗi sản phẩm là một điểm nhấn nghệ thuật, sẵn sàng
+                làm phong cách sống của bạn trở nên độc đáo. Hãy để chúng tôi là nguồn cảm hứng cho không gian sống của
+                bạn.
+            </div>
+            <div class="lane7_flex">
+                <div class="lane5_img"><img src="images/lane5_1.png" alt=""></div>
+                <div class="lane5_img"><img src="images/lane5_2.png" alt=""></div>
+                <div class="lane5_img"><img src="images/lane5_3.png" alt=""></div>
+                <div class="lane5_img"><img src="images/lane5_4.png" alt=""></div>
+            </div>
+            <div class="lane7_button">Xem thêm</div>
         </div>
-        <div class="ghe">
-            <p class="product_text">Ghế</p>
+        <div id="lane8">
+            <div class="lane8_header">Sản phẩm của chúng tôi</div>
+            <div class="lane8_product">
+                <div class="ghe_banh">
+                    <p class="product_text">Ghế bành</p>
+                </div>
+                <div class="ghe">
+                    <p class="product_text">Ghế</p>
+                </div>
+                <div class="ghe_don">
+                    <p class="product_text">Ghế đôn</p>
+                </div>
+                <div class="sofa">
+                    <p class="product_text">Sofa</p>
+                </div>
+                <div class="ban">
+                    <p class="product_text">Bàn</p>
+                </div>
+                <div class="banlamviec">
+                    <p class="product_text">Bàn làm việc</p>
+                </div>
+                <div class="den">
+                    <p class="product_text">Đèn</p>
+                </div>
+                <div class="tham">
+                    <p class="product_text">Thảm</p>
+                </div>
+                <div class="goi">
+                    <p class="product_text">Gối</p>
+                </div>
+            </div>
         </div>
-        <div class="ghe_don">
-            <p class="product_text">Ghế đôn</p>
-        </div>
-        <div class="sofa">
-            <p class="product_text">Sofa</p>
-        </div>
-        <div class="ban">
-            <p class="product_text">Bàn</p>
-        </div>
-        <div class="banlamviec">
-            <p class="product_text">Bàn làm việc</p>
-        </div>
-        <div class="den">
-            <p class="product_text">Đèn</p>
-        </div>
-        <div class="tham">
-            <p class="product_text">Thảm</p>
-        </div>
-        <div class="goi">
-            <p class="product_text">Gối</p>
-        </div>
-    </div>
-    </div>
-    <div id="lane9">
-        <div class="lane9_content">
-            <div class="lane9_header">Khách hàng nói gì về Nook&Nest</div>
-            <div class="lane9_text">Chúng tôi tự hào khi nhận được phản hồi tích cực từ khách hàng về trải nghiệm mua sắm và sản phẩm của mình. Những ý kiến và đánh giá của bạn là nguồn động lực lớn giúp chúng tôi ngày càng hoàn thiện và nâng cao chất lượng phục vụ tốt hơn.</div>
-            <div class="lane9_customer_rate">
-                <div class="customer_rate">
-                   <p class="customer_text">Nook&Nest với tôi không chỉ là nơi mua sắm, mà còn là nơi tôi tìm thấy sự tự do trong việc biểu hiện bản thân. Mỗi món đồ đều là một phần của câu chuyện riêng tôi.Cảm ơn Nook&Nest rất nhiều</p> 
+        <div id="lane9">
+            <div class="lane9_content">
+                <div class="lane9_header">Khách hàng nói gì về Nook&Nest</div>
+                <div class="lane9_text">Chúng tôi tự hào khi nhận được phản hồi tích cực từ khách hàng về trải nghiệm
+                    mua sắm và sản phẩm của mình. Những ý kiến và đánh giá của bạn là nguồn động lực lớn giúp chúng tôi
+                    ngày càng hoàn thiện và nâng cao chất lượng phục vụ tốt hơn.</div>
+                <div class="lane9_customer_rate">
+                    <div class="customer_rate">
+                        <p class="customer_text">Nook&Nest với tôi không chỉ là nơi mua sắm, mà còn là nơi tôi tìm thấy
+                            sự tự do trong việc biểu hiện bản thân. Mỗi món đồ đều là một phần của câu chuyện riêng
+                            tôi.Cảm ơn Nook&Nest rất nhiều</p>
                         <img class="customer_img" src="images/BG.png" alt="">
                         <p class="customer_name">Eddie Smith</p>
                         <p class="customer_role">Nhân viên văn phòng</p>
-                    
+
+                    </div>
+                    <div class="customer_rate">
+                        <p class="customer_text">Tôi luôn quay lại đây vì chất lượng sản phẩm và giá trị nhận được.
+                            Không chỉ có chất lượng cao mà giá cả cũng rất hợp lý. Đây là địa điểm tin cậy để làm mới
+                            không gian sống của bạn.</p>
+                        <img class="customer_img" src="images/BG-1.png" alt="">
+                        <p class="customer_name">Sam Carell</p>
+                        <p class="customer_role">Người tiêu dùng</p>
+                    </div>
+                    <div class="customer_rate">
+                        <p class="customer_text">Đội ngũ chăm sóc khách hàng của Nook&Nest thực sự rất tâm huyết. Họ
+                            luôn sẵn lòng giúp đỡ và trả lời mọi câu hỏi của tôi. Tôi đánh giá rất cao dịch vụ và trải
+                            nghiệm mua sắm ở đây.</p>
+                        <img class="customer_img" src="images/BG-2.png" alt="">
+                        <p class="customer_name">Sophie Moore</p>
+                        <p class="customer_role">Kỹ sư</p>
+                    </div>
+
                 </div>
-                <div class="customer_rate">
-                    <p class="customer_text">Tôi luôn quay lại đây vì chất lượng sản phẩm và giá trị nhận được. Không chỉ có chất lượng cao mà giá cả cũng rất hợp lý. Đây là địa điểm tin cậy để làm mới không gian sống của bạn.</p> 
-                    <img class="customer_img" src="images/BG-1.png" alt="">
-                    <p class="customer_name">Sam Carell</p>
-                    <p class="customer_role">Người tiêu dùng</p></div>
-                 <div class="customer_rate">
-                    <p class="customer_text">Đội ngũ chăm sóc khách hàng của Nook&Nest thực sự rất tâm huyết. Họ luôn sẵn lòng giúp đỡ và trả lời mọi câu hỏi của tôi. Tôi đánh giá rất cao dịch vụ và trải nghiệm mua sắm ở đây.</p> 
-                    <img class="customer_img" src="images/BG-2.png" alt="">
-                    <p class="customer_name">Sophie Moore</p>
-                    <p class="customer_role">Kỹ sư</p>
-                </div>
-                    
-                </div>
-                
-        </div>
-            <img class="ad" src="images/ad-img.jpg" alt="">
-    </div>
-    
-    <div class="footers">
-        <div class="name">
-          <div class="text">
-            <div class="text-holder">Nook &amp; Nest</div>
-          </div>
-          <p class="footer-description">
-            Nâng tầm không gian sống của bạn với đồ nội thất chất lượng để có 
-            cuộc sống thoải mái và tính thẩm mỹ hiện đại.
-          </p>
-  
-  
-          <div class="newsletter-input">
-            <input type="text" placeholder="Nhập email của bạn">
-  
-  
-            <button class="master-primary">Subscribe</button>
-          </div>
-        </div>
-  
-  
-  
-  
-        <div class="footers-menu">
-          <div class="footer-section">
-            <div class="footer-title">Trang chủ
-              <div class="footer-list">
-                <div class="footer-li"><a href="index.html" >Trang chủ</a></div>
-                <div class="footer-li"><a href="#" >Sản phẩm</a></div>
-                <div class="footer-li"><a href="#" >Loại phòng</a></div>
-                <div class="footer-li"><a href="#" >Bộ sưu tập</a></div>
-                <div class="footer-li"><a href="#" >Tin tức</a></div>
-  
-              </div>
+
             </div>
-          </div>
-  
-  
-          <div class="footer-section">
-            <div class="footer-title">Công ty
-              <div class="footer-list">
-                <div class="footer-li"><a href="#" >Về chúng tôi</a></div>
-                <div class="footer-li"><a href="#" >Liên hệ</a></div>
-                <div class="footer-li"><a href="#" >Cơ hội nghề nghiệp</a></div>
-                <div class="footer-li"><a href="#" >Trung tâm hỗ trợ</a></div>
-                <div class="footer-li"><a href="#" >Quy định</a></div>
-  
-              </div>
+            <img class="ad" src="images/ad-img.jpg" alt="">
+        </div>
+
+        <div class="footers">
+            <div class="name">
+                <div class="text">
+                    <div class="text-holder">Nook &amp; Nest</div>
+                </div>
+                <p class="footer-description">
+                    Nâng tầm không gian sống của bạn với đồ nội thất chất lượng để có
+                    cuộc sống thoải mái và tính thẩm mỹ hiện đại.
+                </p>
+
+
+                <div class="newsletter-input">
+                    <input type="text" placeholder="Nhập email của bạn">
+
+
+                    <button class="master-primary">Subscribe</button>
+                </div>
+            </div>
+
+
+
+
+            <div class="footers-menu">
+                <div class="footer-section">
+                    <div class="footer-title">Trang chủ
+                        <div class="footer-list">
+                            <div class="footer-li"><a href="index.html">Trang chủ</a></div>
+                            <div class="footer-li"><a href="#">Sản phẩm</a></div>
+                            <div class="footer-li"><a href="#">Loại phòng</a></div>
+                            <div class="footer-li"><a href="#">Bộ sưu tập</a></div>
+                            <div class="footer-li"><a href="#">Tin tức</a></div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="footer-section">
+                    <div class="footer-title">Công ty
+                        <div class="footer-list">
+                            <div class="footer-li"><a href="#">Về chúng tôi</a></div>
+                            <div class="footer-li"><a href="#">Liên hệ</a></div>
+                            <div class="footer-li"><a href="#">Cơ hội nghề nghiệp</a></div>
+                            <div class="footer-li"><a href="#">Trung tâm hỗ trợ</a></div>
+                            <div class="footer-li"><a href="#">Quy định</a></div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="footer-section-2">
+                <div class="footer-title">Theo dõi trên Instagram</div>
+                <div class="image-group">
+                    <div class="image-placeholder"><img src=" ../images/imgfooter-1.svg" /></div>
+                    <div class="image-placeholder"><img src=" ../images/imgfooter-2.svg " /></div>
+                    <div class="image-placeholder"><img src=" ../images/imgfooter-3.svg" /></div>
+                    <div class="image-placeholder"><img src=" ../images/imgfooter-4.svg" /></div>
+                </div>
+            </div>
+
+
+            <div class="footer-bottom">
+                <div class="social-media">
+                    <div class="social-media-icon">
+                        <svg class="facebook" xmlns="http://www.w3.org/2000/svg" height="18" width="9.818"
+                            fill="rgba(168, 68, 72, 1)" viewBox="0 0 320 512">
+                            <path
+                                d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z" />
+                        </svg>
+                    </div>
+                    <div class="social-media-icon">
+                        <svg class="twitter" xmlns="http://www.w3.org/2000/svg" height="14.604" width="18"
+                            fill="rgba(168, 68, 72, 1)" viewBox="0 0 512 512">
+                            <path
+                                d="M459.4 151.7c.3 4.5 .3 9.1 .3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1 8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-31.2-98.1-72.8 6.5 1 13 1.6 19.8 1.6 9.4 0 18.8-1.3 27.6-3.6-48.1-9.7-84.1-52-84.1-103v-1.3c14 7.8 30.2 12.7 47.4 13.3-28.3-18.8-46.8-51-46.8-87.4 0-19.5 5.2-37.4 14.3-53 51.7 63.7 129.3 105.3 216.4 109.8-1.6-7.8-2.6-15.9-2.6-24 0-57.8 46.8-104.9 104.9-104.9 30.2 0 57.5 12.7 76.7 33.1 23.7-4.5 46.5-13.3 66.6-25.3-7.8 24.4-24.4 44.8-46.1 57.8 21.1-2.3 41.6-8.1 60.4-16.2-14.3 20.8-32.2 39.3-52.6 54.3z" />
+                        </svg>
+                    </div>
+                    <div class="social-media-icon">
+                        <svg class="instagram" xmlns="http://www.w3.org/2000/svg" height="18" width="18"
+                            fill="rgba(168, 68, 72, 1)" viewBox="0 0 448 512">
+                            <path
+                                d="M194.4 211.7a53.3 53.3 0 1 0 59.3 88.7 53.3 53.3 0 1 0 -59.3-88.7zm142.3-68.4c-5.2-5.2-11.5-9.3-18.4-12c-18.1-7.1-57.6-6.8-83.1-6.5c-4.1 0-7.9 .1-11.2 .1c-3.3 0-7.2 0-11.4-.1c-25.5-.3-64.8-.7-82.9 6.5c-6.9 2.7-13.1 6.8-18.4 12s-9.3 11.5-12 18.4c-7.1 18.1-6.7 57.7-6.5 83.2c0 4.1 .1 7.9 .1 11.1s0 7-.1 11.1c-.2 25.5-.6 65.1 6.5 83.2c2.7 6.9 6.8 13.1 12 18.4s11.5 9.3 18.4 12c18.1 7.1 57.6 6.8 83.1 6.5c4.1 0 7.9-.1 11.2-.1c3.3 0 7.2 0 11.4 .1c25.5 .3 64.8 .7 82.9-6.5c6.9-2.7 13.1-6.8 18.4-12s9.3-11.5 12-18.4c7.2-18 6.8-57.4 6.5-83c0-4.2-.1-8.1-.1-11.4s0-7.1 .1-11.4c.3-25.5 .7-64.9-6.5-83l0 0c-2.7-6.9-6.8-13.1-12-18.4zm-67.1 44.5A82 82 0 1 1 178.4 324.2a82 82 0 1 1 91.1-136.4zm29.2-1.3c-3.1-2.1-5.6-5.1-7.1-8.6s-1.8-7.3-1.1-11.1s2.6-7.1 5.2-9.8s6.1-4.5 9.8-5.2s7.6-.4 11.1 1.1s6.5 3.9 8.6 7s3.2 6.8 3.2 10.6c0 2.5-.5 5-1.4 7.3s-2.4 4.4-4.1 6.2s-3.9 3.2-6.2 4.2s-4.8 1.5-7.3 1.5l0 0c-3.8 0-7.5-1.1-10.6-3.2zM448 96c0-35.3-28.7-64-64-64H64C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96zM357 389c-18.7 18.7-41.4 24.6-67 25.9c-26.4 1.5-105.6 1.5-132 0c-25.6-1.3-48.3-7.2-67-25.9s-24.6-41.4-25.8-67c-1.5-26.4-1.5-105.6 0-132c1.3-25.6 7.1-48.3 25.8-67s41.5-24.6 67-25.8c26.4-1.5 105.6-1.5 132 0c25.6 1.3 48.3 7.1 67 25.8s24.6 41.4 25.8 67c1.5 26.3 1.5 105.4 0 131.9c-1.3 25.6-7.1 48.3-25.8 67z" />
+                        </svg>
+                    </div>
+                    <div class="social-media-icon">
+                        <svg class="linked-in" xmlns="http://www.w3.org/2000/svg" height="17.143" width="18"
+                            fill="rgba(168, 68, 72, 1)" viewBox="0 0 448 512">
+                            <path
+                                d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z" />
+                        </svg>
+                    </div>
+
+                    <div class="social-media-icon">
+                        <svg class="you-tube" xmlns="http://www.w3.org/2000/svg" height="13.997" width="19.8"
+                            fill="rgba(168, 68, 72, 1)" viewBox="0 0 576 512">
+                            <path
+                                d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z" />
+                        </svg>
+                    </div>
+                </div>
+
+                <hr width="80%" size="3px" align="center" color="D4D2E3" />
+                <p class="copyright">Copyright &COPY; 2023 Nook &amp; Nest | All Rights Reserved</p>
+            </div>
+        </div>
+
+        <a class="gotopbtn" href="#"><i class="fa-solid fa-arrow-up"></i></a>
     </div>
-  </div>
-  </div>
-  
-  
-  
-  
-              <div class="footer-section-2">
-                  <div class="footer-title">Theo dõi trên Instagram</div>
-                  <div class="image-group">
-                      <div class="image-placeholder"><img src=" ../images/imgfooter-1.svg" /></div>
-                      <div class="image-placeholder"><img src=" ../images/imgfooter-2.svg " /></div>
-                      <div class="image-placeholder"><img src=" ../images/imgfooter-3.svg" /></div>
-                      <div class="image-placeholder"><img src=" ../images/imgfooter-4.svg" /></div>
-                  </div>
-              </div>
-  
-  
-              <div class="footer-bottom">
-                  <div class="social-media">
-                      <div class="social-media-icon">
-                          <svg class="facebook" xmlns="http://www.w3.org/2000/svg" height="18" width="9.818" fill="rgba(168, 68, 72, 1)" viewBox="0 0 320 512">
-                              <path d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"/>
-                          </svg>
-                      </div>
-                      <div class="social-media-icon">
-                          <svg class="twitter" xmlns="http://www.w3.org/2000/svg" height="14.604" width="18" fill="rgba(168, 68, 72, 1)" viewBox="0 0 512 512">
-                          <path d="M459.4 151.7c.3 4.5 .3 9.1 .3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1 8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-31.2-98.1-72.8 6.5 1 13 1.6 19.8 1.6 9.4 0 18.8-1.3 27.6-3.6-48.1-9.7-84.1-52-84.1-103v-1.3c14 7.8 30.2 12.7 47.4 13.3-28.3-18.8-46.8-51-46.8-87.4 0-19.5 5.2-37.4 14.3-53 51.7 63.7 129.3 105.3 216.4 109.8-1.6-7.8-2.6-15.9-2.6-24 0-57.8 46.8-104.9 104.9-104.9 30.2 0 57.5 12.7 76.7 33.1 23.7-4.5 46.5-13.3 66.6-25.3-7.8 24.4-24.4 44.8-46.1 57.8 21.1-2.3 41.6-8.1 60.4-16.2-14.3 20.8-32.2 39.3-52.6 54.3z"/>
-                      </svg>
-                      </div>
-                      <div class="social-media-icon">
-                          <svg class="instagram" xmlns="http://www.w3.org/2000/svg" height="18" width="18" fill="rgba(168, 68, 72, 1)" viewBox="0 0 448 512">
-                              <path d="M194.4 211.7a53.3 53.3 0 1 0 59.3 88.7 53.3 53.3 0 1 0 -59.3-88.7zm142.3-68.4c-5.2-5.2-11.5-9.3-18.4-12c-18.1-7.1-57.6-6.8-83.1-6.5c-4.1 0-7.9 .1-11.2 .1c-3.3 0-7.2 0-11.4-.1c-25.5-.3-64.8-.7-82.9 6.5c-6.9 2.7-13.1 6.8-18.4 12s-9.3 11.5-12 18.4c-7.1 18.1-6.7 57.7-6.5 83.2c0 4.1 .1 7.9 .1 11.1s0 7-.1 11.1c-.2 25.5-.6 65.1 6.5 83.2c2.7 6.9 6.8 13.1 12 18.4s11.5 9.3 18.4 12c18.1 7.1 57.6 6.8 83.1 6.5c4.1 0 7.9-.1 11.2-.1c3.3 0 7.2 0 11.4 .1c25.5 .3 64.8 .7 82.9-6.5c6.9-2.7 13.1-6.8 18.4-12s9.3-11.5 12-18.4c7.2-18 6.8-57.4 6.5-83c0-4.2-.1-8.1-.1-11.4s0-7.1 .1-11.4c.3-25.5 .7-64.9-6.5-83l0 0c-2.7-6.9-6.8-13.1-12-18.4zm-67.1 44.5A82 82 0 1 1 178.4 324.2a82 82 0 1 1 91.1-136.4zm29.2-1.3c-3.1-2.1-5.6-5.1-7.1-8.6s-1.8-7.3-1.1-11.1s2.6-7.1 5.2-9.8s6.1-4.5 9.8-5.2s7.6-.4 11.1 1.1s6.5 3.9 8.6 7s3.2 6.8 3.2 10.6c0 2.5-.5 5-1.4 7.3s-2.4 4.4-4.1 6.2s-3.9 3.2-6.2 4.2s-4.8 1.5-7.3 1.5l0 0c-3.8 0-7.5-1.1-10.6-3.2zM448 96c0-35.3-28.7-64-64-64H64C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96zM357 389c-18.7 18.7-41.4 24.6-67 25.9c-26.4 1.5-105.6 1.5-132 0c-25.6-1.3-48.3-7.2-67-25.9s-24.6-41.4-25.8-67c-1.5-26.4-1.5-105.6 0-132c1.3-25.6 7.1-48.3 25.8-67s41.5-24.6 67-25.8c26.4-1.5 105.6-1.5 132 0c25.6 1.3 48.3 7.1 67 25.8s24.6 41.4 25.8 67c1.5 26.3 1.5 105.4 0 131.9c-1.3 25.6-7.1 48.3-25.8 67z"/>
-                          </svg>
-                      </div>
-                      <div class="social-media-icon">
-                          <svg class="linked-in" xmlns="http://www.w3.org/2000/svg" height="17.143" width="18" fill="rgba(168, 68, 72, 1)" viewBox="0 0 448 512">
-                              <path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"/>
-                          </svg>
-                      </div>
-  
-                      <div class="social-media-icon">
-                          <svg class="you-tube" xmlns="http://www.w3.org/2000/svg" height="13.997" width="19.8" fill="rgba(168, 68, 72, 1)"  viewBox="0 0 576 512">
-                              <path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z"/>
-                          </svg>
-                      </div>
-                  </div>
-  
-                  <hr width="80%" size="3px" align="center" color="D4D2E3" />
-                  <p class="copyright">Copyright &COPY; 2023 Nook &amp; Nest | All Rights Reserved</p>
-              </div>
-          </div>
-    
-    <a class="gotopbtn" href="#"><i class="fa-solid fa-arrow-up"></i></a>
-    </div>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <script
-      type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
-    ></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script>
-        document.addEventListener('scroll',()=>{
+        document.addEventListener('scroll', () => {
             var header = document.querySelector('header')
-            if(window.scrollY>0){
+            if (window.scrollY > 0) {
                 header.classList.add('scrolled')
             }
-            else
-            {
-                
+            else {
+
                 header.classList.remove('scrolled')
             }
         })
-        document.addEventListener('DOMContentLoaded', function(){
+        document.addEventListener('DOMContentLoaded', function () {
             var div1 = document.querySelector('.product_page');
-            var productmenu= document.querySelector('.product_menu');
-            var collectionmenu= document.querySelector('.collection_menu');
-            var roommenu= document.querySelector('.room_menu');
+            var productmenu = document.querySelector('.product_menu');
+            var collectionmenu = document.querySelector('.collection_menu');
+            var roommenu = document.querySelector('.room_menu');
             var isHovered = false;
             var sub_table = document.querySelector('.sub_res_table')
-            var mess=document.querySelector('.mess-table');
-            var messclicktime=0;
-            var accountclicktime=0;
-            var subresclicktime=0;
+            var mess = document.querySelector('.mess-table');
+            var messclicktime = 0;
+            var accountclicktime = 0;
+            var subresclicktime = 0;
             sub_table.style.display = 'none'
-            mess.style.display='none';
-            productmenu.style.display='none';
-            collectionmenu.style.display='none';
-            roommenu.style.display='none';
-            $('.sign-in-btn').click(e=>{
+            mess.style.display = 'none';
+            productmenu.style.display = 'none';
+            collectionmenu.style.display = 'none';
+            roommenu.style.display = 'none';
+            $('.sign-in-btn').click(e => {
                 window.alert('Đăng nhập thành công !!');
             })
-            $('.sign-up-btn').click(e=>{
+            $('.sign-up-btn').click(e => {
                 var signupid = document.getElementById('sign-up-id').value;
                 var signuppass = document.getElementById('sign-up-pass').value
-                var signuppass2 =  document.getElementById('sign-up-pass2').value
-                if(signuppass != signuppass2){
+                var signuppass2 = document.getElementById('sign-up-pass2').value
+                if (signuppass != signuppass2) {
                     window.alert('Xác nhận mật khẩu sai !! Vui lòng Đăng kí lại!')
                     return;
                 }
                 else
-                window.alert('Đăng kí thành công~!\nID : ' + signupid + '\nPassword : '+signuppass);
+                    window.alert('Đăng kí thành công~!\nID : ' + signupid + '\nPassword : ' + signuppass);
             })
             setTimeout(e => {
                 $('.ad').fadeOut();
             }, 5000);
-            $('.mess').click(e=>{
-                if(messclicktime%2==1)
-                {
-                $(mess).fadeOut();
+            $('.mess').click(e => {
+                if (messclicktime % 2 == 1) {
+                    $(mess).fadeOut();
                 }
                 else
-                $(mess).fadeIn();
+                    $(mess).fadeIn();
                 messclicktime++;
             })
-            $('.product_page,.product_menu').mouseenter(function() {
+            $('.product_page,.product_menu').mouseenter(function () {
                 isHovered = true;
                 $('.collection_menu').slideUp();
                 $('.room_menu').slideUp();
-                $('.product_menu').slideDown(); 
+                $('.product_menu').slideDown();
                 div1.classList.add('hover');
             });
 
-            $('.product_page,.product_menu').mouseleave(function() {
+            $('.product_page,.product_menu').mouseleave(function () {
                 isHovered = false;
-                setTimeout(function() {
-                if (!isHovered) {
-                    $('.product_menu').slideUp();
-                    div1.classList.remove('hover');
-                }
+                setTimeout(function () {
+                    if (!isHovered) {
+                        $('.product_menu').slideUp();
+                        div1.classList.remove('hover');
+                    }
                 }, 10);
             });
             var div2 = document.querySelector('.collection_page');
             var isHovered = false;
-            $('.collection_page,.collection_menu').mouseenter(function() {
+            $('.collection_page,.collection_menu').mouseenter(function () {
                 isHovered = true;
                 $('.product_menu').slideUp();
                 $('.room_menu').slideUp();
-                $('.collection_menu').slideDown(); 
+                $('.collection_menu').slideDown();
                 div2.classList.add('hover');
             });
 
-            $('.collection_page,.collection_menu').mouseleave(function() {
+            $('.collection_page,.collection_menu').mouseleave(function () {
                 isHovered = false;
-                setTimeout(function() {
-                if (!isHovered) {
-                    $('.collection_menu').slideUp();
-                    div2.classList.remove('hover');
-                }
-                }, 10); 
+                setTimeout(function () {
+                    if (!isHovered) {
+                        $('.collection_menu').slideUp();
+                        div2.classList.remove('hover');
+                    }
+                }, 10);
             });
             var div3 = document.querySelector('.room_page');
             var isHovered = false;
-            $('.room_page,.room_menu').mouseenter(function() {
+            $('.room_page,.room_menu').mouseenter(function () {
                 isHovered = true;
+                div3.classList.add('hover');
                 $('.product_menu').slideUp();
                 div1.classList.remove('hover');
                 div2.classList.remove('hover');
                 $('.collection_menu').slideUp();
-                $('.room_menu').slideDown(); 
-                div3.classList.add('hover');
+                $('.room_menu').slideDown();
+
             });
 
-            $('.room_page,.room_menu').mouseleave(function() {
+            $('.room_page,.room_menu').mouseleave(function () {
                 isHovered = false;
-                setTimeout(function() {
-                if (!isHovered) {
-                    $('.room_menu').slideUp();
-                    div3.classList.remove('hover');
-                }
-                }, 10); 
+                setTimeout(function () {
+                    if (!isHovered) {
+                        $('.room_menu').slideUp();
+                        div3.classList.remove('hover');
+                    }
+                }, 10);
             });
-            $('#account').click(e=>{
-                if(accountclicktime%2==1)
-                {
-                $('.sign-in').fadeOut();
-                $('.sign-up').fadeOut();
+            $('#account').click(e => {
+                if (accountclicktime % 2 == 1) {
+                    $('.sign-in').fadeOut();
+                    $('.sign-up').fadeOut();
                 }
                 else
-                $('.sign-in').fadeIn();
+                    $('.sign-in').fadeIn();
                 accountclicktime++;
             })
-            $('.sign-in-opt').click(e=>{
-                
+            $('.sign-in-opt').click(e => {
+
                 $('.sign-up').fadeOut();
                 setTimeout(() => {
-                    
-                $('.sign-in').fadeIn();
+
+                    $('.sign-in').fadeIn();
                 }, 200);
             })
-            $('.sign-up-opt').click(e=>{
-                
+            $('.sign-up-opt').click(e => {
+
                 $('.sign-in').fadeOut();
                 setTimeout(() => {
-                    
-                $('.sign-up').fadeIn();
+
+                    $('.sign-up').fadeIn();
                 }, 200);
             })
-    
-            $('.sub_res_button').click(e=>{
+
+            $('.sub_res_button').click(e => {
                 var subemail = document.querySelector('#sub_res_email').value
                 alert('Bạn đã đăng ký nhận khuyến mãi thành công với email : \n' + subemail)
             })
-            $('.sub').click(e=>{
-                if(subresclicktime%2==1)
-                {
-                $('.sub_res_table').fadeOut();
+            $('.sub').click(e => {
+                if (subresclicktime % 2 == 1) {
+                    $('.sub_res_table').fadeOut();
                 }
                 else
-                $('.sub_res_table').fadeIn();
+                    $('.sub_res_table').fadeIn();
                 subresclicktime++;
             })
         });
-    
-     $(document).ready(function(){
-    $('.slide_show_product').slick({
-        dots: false,
-        infinite: true,
-        speed: 300,
-        slidesToShow: 1,
-        variableWidth: true,
-        autoplay: true,
-        autoplaySpeed: 3000,
-        prevArrow:
-        `<button type="button" class="slick-prev"><i class="fa-solid fa-arrow-left"></i></button>`,
-        nextArrow:
-        `<button type="button" class="slick-next"><i class="fa-solid fa-arrow-right"></i></button>`,
-    });
-  });
-  $(document).ready(function(){
-    $('.lane9_customer_rate').slick({
-        infinite: true,
-        speed: 300,
-        slidesToShow: 2,
-        adaptiveHeight: true,
-        prevArrow:
-        `<button type="button" class="slick-prev lane9-prev" ><i class="fa-solid fa-arrow-left"></i></button>`,
-        nextArrow:
-        `<button type="button" class="slick-next lane9-next"><i class="fa-solid fa-arrow-right"></i></button>`,
-    });
-  });
+
+        $(document).ready(function () {
+            $('.slide_show_product').slick({
+                dots: false,
+                infinite: true,
+                speed: 300,
+                slidesToShow: 1,
+                variableWidth: true,
+                autoplay: true,
+                autoplaySpeed: 3000,
+                prevArrow:
+                    `<button type="button" class="slick-prev"><i class="fa-solid fa-arrow-left"></i></button>`,
+                nextArrow:
+                    `<button type="button" class="slick-next"><i class="fa-solid fa-arrow-right"></i></button>`,
+            });
+        });
+        $(document).ready(function () {
+            $('.lane9_customer_rate').slick({
+                infinite: true,
+                speed: 300,
+                slidesToShow: 2,
+                adaptiveHeight: true,
+                prevArrow:
+                    `<button type="button" class="slick-prev lane9-prev" ><i class="fa-solid fa-arrow-left"></i></button>`,
+                nextArrow:
+                    `<button type="button" class="slick-next lane9-next"><i class="fa-solid fa-arrow-right"></i></button>`,
+            });
+        });
     </script>
     <script src="https://kit.fontawesome.com/ae7bc8c7df.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
