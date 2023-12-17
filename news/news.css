@@ -425,6 +425,10 @@ letter-spacing: -0.42px;
     bottom: 115px;
     border: solid 1px black;
 }
+a{
+  text-decoration: none;
+  color: black;
+}
 .list-news-table{
     display: flex;
     flex-direction: column;
