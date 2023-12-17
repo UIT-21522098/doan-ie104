@@ -904,3 +904,7 @@ letter-spacing: -0.42px;
   color: #A84448;
 }
 
+.list-row a{
+  text-decoration: none;
+  color: #000;
+}
