@@ -946,3 +946,8 @@ letter-spacing: -0.42px;
   #account_section a{
     color: rgba(168, 68, 72, 1);
   }
+
+  .list-row a{
+    text-decoration: none;
+    color: #000;
+  }
