@@ -261,7 +261,7 @@ a {
 
 a:hover {
     background-color: #ddd;
-    color: black;
+    color: red;
 }
 #ad_bar{
     position: absolute;
@@ -295,26 +295,6 @@ a:hover {
     position: fixed;
     bottom: 0;
     cursor: pointer;
-}
-.mess{
-    z-index: 10;
-    position: fixed;
-    right: 15px;
-    bottom: 65px;
-    font-size: 35px;
-    cursor: pointer;
-}
-.mess-table{
-    z-index: 10;
-    border-radius: 16px;
-    background: var(--neutral-white, #FFF);
-    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.25);
-    width: 383px;
-    height: 421px;
-    position: fixed;
-    right: 15px;
-    bottom: 115px;
-    border: solid 1px black;
 }
 .left-side{
 margin-right: 135px;
@@ -943,14 +923,6 @@ letter-spacing: -0.42px;
 }
 html{
     scroll-behavior: smooth;
-}
-.product_page.hover{
-    background-color: white;
-    color: #000;
-}
-.collection_page.hover{
-    background-color: white;
-    color: #000;
 }
 .collection-see-all{
     font-style: italic;

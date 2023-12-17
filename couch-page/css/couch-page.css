@@ -134,7 +134,11 @@ header a {
   margin-left: 10vh;
 
 }
- 
+a:hover
+{
+  color: rgba(168, 68, 72, 1);
+  font-weight: 700;
+}
 .collection a
   {
     text-decoration: none;

@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Giỏ hàng</title>
+    <title>Tài khoản</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="account.css">
     <script src="account.js"></script>
     <link rel="icon" type="image/x-icon" href="account/images/Logo-img.png"/>
-
+    <link rel="icon" type="image/x-icon" href="img/Logo-img.png"/>
 </head>
 
 <body>
@@ -24,22 +24,20 @@
           </div>
           <div id="account_section">
             <div id="wishlist">
-                <a href=""> 
+                <a href="favorite.html"> 
                   <div id="wishlist_img"><img src="images/Heart.png" alt=""></div>
                   <div id="wishlist_text">Yêu thích</div>
                 </a> 
               </div> 
               <div id="cart">
-                <a href="../cart/cart.html"> 
+                <a href="cart.html"> 
                   <div id="cart_img"><img src="images/Feather Icon.png" alt=""></div>
                   <div id="cart_text">Giỏ hàng</div>
                 </a>
               </div>
               <div id="account">
-                <a href="account.html"> 
                   <div><img src="images/User.png" alt=""></div>
                   <div>Tài khoản</div>
-                </a> 
               </div>
           </div>
           <div class="sticky">
@@ -47,14 +45,14 @@
               <nav>
               <ul>
                   <li><a href="index.html">Trang chủ</a></li>
-                  <li><a class="product_page" href="#product">Sản phẩm <i class="fa-solid fa-caret-down"></i></a></li>
+                  <li><a class="product_page">Sản phẩm <i class="fa-solid fa-caret-down"></i></a></li>
                   <li><a class="room_page" href="room-page.html">Loại phòng <i class="fa-solid fa-caret-down"></i></a>
                     <div class="room_menu">
                         <div class="collection"><a href="livingroom-product.html">Phòng khách</a></div>
                         <div class="collection">Phòng ăn</div>
                         <div class="collection">Nhà bếp</div>
                         <div class="collection">Phòng ngủ</div>
-                        <div class="collection-see-all">Xem tất cả <i class="fa-solid fa-chevron-right"></i></div>
+                        <div class="collection-see-all"><a href="livingroom-product.html">Xem tất cả</a> <i class="fa-solid fa-chevron-right"></i></div>
                       </div>
                 </li>
                   <li><a class="collection_page" href="collection-page.html">Bộ sưu tập <i class="fa-solid fa-caret-down"></i></a>
@@ -63,9 +61,9 @@
                         <div class="collection">Trung Thu</div>
                         <div class="collection">Halloween</div>
                         <div class="collection">Lễ Tết</div>
-                        <div class="collection-see-all">Xem tất cả <i class="fa-solid fa-chevron-right"></i></div>
+                        <div class="collection-see-all"><a class="collection_page" href="collection-page.html">Xem tất cả</a> <i class="fa-solid fa-chevron-right"></i></div>
                       </div></li>
-                  <li><a href="#news">Tin tức</a></li>
+                  <li><a href="news.html">Tin tức</a></li>
                   <li><a href="about.html">Về chúng tôi</a></li>
                   <li><a href="contact.html">Liên hệ</a></li>
                   
@@ -113,7 +111,7 @@
       </div>
   <div class="product_menu">
   <div class="list-row"> 
-      <div class="product">Ghế dài</div>
+      <div class="product"><a href="couch-page.html">Ghế dài</a></div>
       <div class="product">Ghế bành</div>
       <div class="product">Ghế tựa</div>
       <div class="product">Ghế đôn</div>
@@ -167,35 +165,80 @@
         <div class="account-body">
             <div class="box" id="update-info">
                 <i class="material-icons">account_circle</i><h5>Cập nhật thông tin</h5>
-                <p>Na<br>
-                nacute@gmail.com<br>
-                ********<br>
-                </p>
-                <div class="edit" id="edit-info">Chỉnh sửa</div>
+                <div class="information">
+                    <p id="username">Na</p>
+                    <p id="email">nacute@gmail.com</p>
+                    <p id="password"></p>
+                </div>
+                <div class="edit" id="editInfo">Chỉnh sửa</div>
             </div>
 
             <div class="box" id="shipping-info">
                 <i class="material-icons">home</i><h5>Thông tin giao hàng</h5>
-                <p>Khu phố 6<br>
-                    Phường Linh Trung<br>
-                    TP.Thủ Đức<br>
-                    TP.HCM
-                <div class="edit" id="edit-shipping">Chỉnh sửa</div>
+                <div class="shipping">
+                    <p id="street">Khu phố 6</p>
+                    <p id="district">Linh Trung</p>
+                    <p id="city">TP. Thủ Đức</p>
+                    <p id="province">TP. HCM</p>
+                </div>
+                <div class="edit" id="editShipping">Chỉnh sửa</div>
             </div>
 
             <div class="box">
                 <i class="material-icons">account_balance_wallet</i><h5>Thông tin thanh toán</h5>
-                <p>Chưa đặt thẻ nào làm phương thức thanh toán mặc định</p>
-                <div class="edit" id="edit-payment">Chỉnh sửa</div>
+                <div class="payment">
+                <p id="name">Chưa đặt thẻ nào làm phương thức thanh toán mặc định</p>
+                <p id="cardnum"></p>
+                <p id="expdate"></p>
+                <p id="cvv"></p>
+                </div>
+                <div class="edit" id="editPayment">Chỉnh sửa</div>
             </div>
         </div>
 
         <div id="editBox">
-            <h2>Edit Information</h2>
+            <h2>Chỉnh sửa thông tin</h2>
             <form id="editForm">
-                <label for="newInfo">New Information:</label>
-                <input type="text" id="newInfo" name="newInfo" required>
-                <button type="submit">Submit</button>
+                    <p>Tên</p>
+                    <input type="text" id="newUsername">
+                    <p>Email</p>
+                    <input type="text" id="newEmail">
+                    <p>Mật khẩu mới</p>
+                    <input type="password" id="newPassword">
+                    <p>Xác nhận mật khẩu mới</p>
+                    <input type="password" id="retypePassword">
+                    <span id="passwordWarning"></span>
+                    <button id="submit">Lưu</button>
+            </form>
+        </div>
+
+        <div id="editBox2">
+            <h2>Chỉnh sửa thông tin</h2>
+            <form id="editForm2">
+                    <p>Số nhà, Tên Đường</p>
+                    <input type="text" id="newStreet">
+                    <p>Phường/Xã</p>
+                    <input type="text" id="newDistrict">
+                    <p>Quận/Huyện</p>
+                    <input type="text" id="newCity">
+                    <p>Tỉnh/Thành phố</p>
+                    <input type="text" id="newProvince">
+                    <button id="submit">Lưu</button>
+            </form>
+        </div>
+
+        <div id="editBox3">
+            <h2>Chỉnh sửa thông tin</h2>
+            <form id="editForm3">
+                    <p>Họ tên chủ thẻ</p>
+                    <input type="text" id="newName">
+                    <p>Số thẻ</p>
+                    <input type="text" id="newCardNum">
+                    <p>Tháng/Năm hết hạn</p>
+                    <input type="text" id="newExpDate">
+                    <p>Mã xác minh</p>
+                    <input type="text" id="newCVV">
+                    <button id="submit">Lưu</button>
             </form>
         </div>
     </div>
@@ -315,8 +358,7 @@
             header.classList.add('scrolled')
         }
         else
-        {
-            
+        {  
             header.classList.remove('scrolled')
         }
     })
@@ -467,6 +509,124 @@ $('.slide_show_product').slick({
     `<button type="button" class="slick-next"><i class="fa-solid fa-arrow-right"></i></button>`,
 });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const editBox = document.getElementById("editBox");
+    const editBox2 = document.getElementById("editBox2");
+    const editBox3 = document.getElementById("editBox3");
+    const editForm = document.getElementById("editForm");
+    const editForm2 = document.getElementById("editForm2");
+    const editForm3 = document.getElementById("editForm3");
+    const username = document.getElementById("username");
+    const email = document.getElementById("email");
+    const newPassword = document.getElementById("newPassword");
+    const retypePassword = document.getElementById("retypePassword");
+    const street = document.getElementById("street");
+    const district = document.getElementById("district");
+    const city = document.getElementById("city");
+    const province = document.getElementById("province");
+    const name = document.getElementById("name");
+    const cardnum = document.getElementById("cardnum");
+    const expdate = document.getElementById("expdate");
+    const cvv = document.getElementById("cvv");
+    const editInfo = document.getElementById("editInfo");
+    const editShipping = document.getElementById("editShipping");
+    const editPayment = document.getElementById("editPayment");
+    const passwordWarning = document.getElementById("passwordWarning");
+  
+    function showEditBox() {
+      editBox.style.display = "block";
+    }
+
+    function showEditBox2() {
+      editBox2.style.display = "block";
+    }
+
+    function showEditBox3() {
+      editBox3.style.display = "block";
+    }
+  
+    function hideEditBox() {
+      editBox.style.display = "none";
+    }
+
+    function hideEditBox2() {
+      editBox2.style.display = "none";
+    }
+
+    function hideEditBox3() {
+      editBox3.style.display = "none";
+    }
+  
+    function checkPasswordMatch() {
+      var newPass = newPassword.value;
+      var retypePass = retypePassword.value;
+      if (newPass !== retypePass) {
+        passwordWarning.textContent = "Nhập lại mật khẩu sai. Vui lòng thử lại!";
+        return false;
+      } else {
+        passwordWarning.textContent = "";
+        return true;
+      }
+    }
+  
+    editInfo.addEventListener("click", function () {
+      showEditBox();
+      document.getElementById("newUsername").value = username.textContent;
+      document.getElementById("newEmail").value = email.textContent;
+    });
+
+    editShipping.addEventListener("click", function () {
+      showEditBox2();
+      document.getElementById("newStreet").value = street.textContent;
+      document.getElementById("newDistrict").value = district.textContent;
+      document.getElementById("newCity").value = city.textContent;
+      document.getElementById("newProvince").value = province.textContent;
+    });
+
+    editPayment.addEventListener("click", function () {
+      showEditBox3();
+    });
+  
+    editForm.addEventListener("submit", function (event) {
+      event.preventDefault();
+      if (!checkPasswordMatch()) {
+        return;
+      }
+      const newUsername = document.getElementById("newUsername").value;
+      const newEmail = document.getElementById("newEmail").value;
+      const newPassword = document.getElementById("newPassword").value;
+      username.textContent = newUsername;
+      email.textContent = newEmail;
+      hideEditBox();
+    });
+
+    editForm2.addEventListener("submit", function (event) {
+      event.preventDefault();
+      const newStreet = document.getElementById("newStreet").value;
+      const newDistrict = document.getElementById("newDistrict").value;
+      const newCity = document.getElementById("newCity").value;
+      const newProvince = document.getElementById("newProvince").value;
+      street.textContent = newStreet;
+      district.textContent = newDistrict;
+      city.textContent = newCity;
+      province.textContent = newProvince;
+      hideEditBox2();
+    });
+
+    editForm3.addEventListener("submit", function (event) {
+      event.preventDefault();
+      const newName= document.getElementById("newName").value;
+      const newCardNum = document.getElementById("newCardNum").value;
+      const newExpDate = document.getElementById("newExpDate").value;
+      const newCVV = document.getElementById("newCVV").value;
+      name.textContent = newName;
+      cardnum.textContent = newCardNum;
+      expdate.textContent = newExpDate;
+      cvv.textContent = newCVV;
+      hideEditBox3();
+    });
+  });
 </script>
 <script src="https://kit.fontawesome.com/ae7bc8c7df.js" crossorigin="anonymous"></script>
 </html>
