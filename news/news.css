@@ -237,17 +237,17 @@
       background-color: white;
       color: #333;
   }
-  ul {
+  header ul {
       list-style-type: none;
       margin: 0;
       padding: 0;
       overflow: hidden;
   }
-  li {
+  header li {
       float: left;
   }
   
-  a {
+  header  a {
       display: block;
       color: black;
       text-align: center;
@@ -255,7 +255,7 @@
       text-decoration: none;
   }
   
-  a:hover {
+  header  a:hover {
       background-color: #ddd;
       color: black;
   }
