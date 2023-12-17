@@ -11,9 +11,7 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
   >
   <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <script src="js/contact.js"></script>
-</head>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"></head>
 <body>
     <div class="container">
         <div id="header">
@@ -50,27 +48,27 @@
                     <nav>
                     <ul>
                         <li><a href="../index.html">Trang chủ</a></li>
-                        <li><a class="product_page" href="#product">Sản phẩm <i class="fa-solid fa-caret-down"></i></a>
+                        <li><a class="product_page">Sản phẩm <i class="fa-solid fa-caret-down"></i></a>
                         </li>
-                        <li><a class="room_page" href="#rooms">Loại phòng <i class="fa-solid fa-caret-down"></i></a>
+                        <li><a class="room_page" href="../couch-page/room-page.html">Loại phòng <i class="fa-solid fa-caret-down"></i></a>
                         <div class="room_menu">
                             <div class="collection"><a class="not" href="../couch-page/livingroom-product.html">Phòng khách</a></div>
                             <div class="collection">Phòng ăn</div>
                             <div class="collection">Nhà bếp</div>
                             <div class="collection">Phòng ngủ</div>
-                            <div class="collection-see-all"><a class="not" href="/../couch-page/room-page.html">Xem tất cả <i class="fa-solid fa-chevron-right"></i></a> </div>
+                            <div class="collection-see-all"><a class="not" href="../couch-page/room-page.html">Xem tất cả <i class="fa-solid fa-chevron-right"></i></a> </div>
                         </div></li>
-                        <li><a class="collection_page" href="#collection">Bộ sưu tập <i class="fa-solid fa-caret-down"></i></a> 
+                        <li><a class="collection_page" href="../couch-page/collection-page.html">Bộ sưu tập <i class="fa-solid fa-caret-down"></i></a> 
                         <div class="collection_menu">
                             <div class="collection"><a class="not" href="../couch-page/xmas-collection.html">Giáng Sinh</a></div>
                             <div class="collection">Trung Thu</div>
                             <div class="collection">Halloween</div>
                             <div class="collection">Lễ Tết</div>
-                            <div class="collection-see-all"><a class="not" href="/../couch-page/collection-page.html"> Xem tất cả <i class="fa-solid fa-chevron-right"></i></a></div>
+                            <div class="collection-see-all"><a class="not" href="../couch-page/collection-page.html"> Xem tất cả <i class="fa-solid fa-chevron-right"></i></a></div>
                           </div></li>
                         <li><a href="../news/news.html">Tin tức</a></li>
                         <li><a href="../about/about.html">Về chúng tôi</a></li>
-                        <li><a href="contact/contact.html">Liên hệ</a></li>
+                        <li><a href="../contact/contact.html">Liên hệ</a></li>
                         
                     </ul>
                 </nav>
@@ -477,6 +475,16 @@ $('.slide_show_product').slick({
     `<button type="button" class="slick-next"><i class="fa-solid fa-arrow-right"></i></button>`,
 });
 });
+</script>
+<script>
+    function gui(){
+    let name=document.getElementById("name").value;
+    let email=document.getElementById("email").value;
+    let phone=document.getElementById("phone").value;
+    let address=document.getElementById("address").value;
+    let message=document.getElementById("message").value;
+    alert("Cảm ơn "+ name + " đã liên lạc cho Nook&Nest. Chúng tôi sẽ phản hồi trong thời gian sớm nhất!")
+}
 </script>
 <script src="https://kit.fontawesome.com/ae7bc8c7df.js" crossorigin="anonymous"></script>
 </body>

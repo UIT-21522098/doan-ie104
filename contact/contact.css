@@ -76,7 +76,7 @@ flex-shrink: 0;
 }
 #wishlist{
   position: absolute;
-  top: 18px;
+  top: 12px;
   left: 53px;
   display: flex;
   width: 79px;
@@ -820,4 +820,8 @@ iframe{
 }
   .not{
     padding: 0;
+  }
+
+  #account_section a{
+    color: #A84448;
   }
