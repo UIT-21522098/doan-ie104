@@ -806,3 +806,8 @@ letter-spacing: -0.42px;
         text-decoration: none;
         color: var(--brick, #A84448);
       }
+
+      .list-row a{
+        color: #000;
+        
+      }
