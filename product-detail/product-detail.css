@@ -251,7 +251,25 @@ a:hover {
   background-color: #ddd;
   color: black;
 }
+.not{
+  padding: 0;
+}
 
+.room_menu{
+  position: fixed;
+  top:46px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding:5px;
+  z-index: 100;
+  width: fit-content;
+  height: fit-content;
+  color: black;
+  border-radius: 0px 0px 20px 20px;
+  background-color:var(--neutral-white, #FFF);
+}
 .product_page.hover{
   background-color: white;
   color: #000;

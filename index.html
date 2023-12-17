@@ -12,6 +12,36 @@
       >
 </head>
 <body>
+    <!-- Messenger Plugin chat Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Plugin chat code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "186578557873576");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v18.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
     <div id="container"> 
         
             <div id="header">
@@ -42,9 +72,9 @@
                     <nav>
                     <ul>
                         <li><a href="index.html">Trang chủ</a></li>
-                        <li><a class="product_page" href="#product">Sản phẩm <i class="fa-solid fa-caret-down"></i></a>
+                        <li><a class="product_page" href="">Sản phẩm <i class="fa-solid fa-caret-down"></i></a>
                         </li>
-                        <li><a class="room_page" href="#rooms">Loại phòng <i class="fa-solid fa-caret-down"></i></a>
+                        <li><a class="room_page" href="">Loại phòng <i class="fa-solid fa-caret-down"></i></a>
                         <div class="room_menu">
                             <div class="collection"><a class="not" href="../couch-page/livingroom-product.html">Phòng khách</a></div>
                             <div class="collection">Phòng ăn</div>
@@ -139,24 +169,6 @@
                 <div class="sub_res_button">ĐĂNG KÝ</div>
             </div>
         </div>
-    </div>
-    <div class="mess-table">
-        <div class="mess-table-content">
-            <div>
-                <img class="left-side" src="images/Prominence Elements/Page Profile Picture.png" alt="">
-                <img class="right-side" src="images/Prominence Elements/Account Switch.png" alt="">
-                <img class="right-side" src="images/Prominence Elements/Overflow.png" alt="">
-                <img class="right-side" src="images/Prominence Elements/Minimize.png" alt="">
-            </div>
-            <div class="mess-table-content-2">Trò chuyện với Nook & Nest</div>
-            <div class="mess-table-content-3">Xin chào! Tôi có thể giúp gì được cho bạn?</div>
-            <div class="mess-table-content-4"><i class="fa-brands fa-facebook-messenger"></i> Tiếp tục như là Na</div>
-            <div class="mess-table-content-5">Tiếp tục như là Khách</div>
-            <div class="mess-table-content-6">Bằng cách tiếp tục với tư cách là khách, bạn đồng ý với <span>Điều khoản, Chính sách dữ liệu</span>  và <span>Chính sách cookie</span> của Facebook.</div>
-        </div>
-    </div>
-    <div class="mess">
-        <i class="fa-brands fa-facebook-messenger"></i>
     </div>
     <div id="lane1">
             <p id="lane1_text1">Nơi mọi ý tưởng trở thành hiện thực !!</p>
@@ -577,7 +589,7 @@
         slidesToShow: 1,
         variableWidth: true,
         autoplay: true,
-        autoplaySpeed: 3000,
+        autoplaySpeed: 2500,
         prevArrow:
         `<button type="button" class="slick-prev"><i class="fa-solid fa-arrow-left"></i></button>`,
         nextArrow:
@@ -589,6 +601,8 @@
         infinite: true,
         speed: 300,
         slidesToShow: 2,
+        autoplay: true,
+        autoplaySpeed: 2500,
         adaptiveHeight: true,
         prevArrow:
         `<button type="button" class="slick-prev lane9-prev" ><i class="fa-solid fa-arrow-left"></i></button>`,
