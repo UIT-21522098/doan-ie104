@@ -88,11 +88,11 @@
                         </div></li>
                         <li><a class="collection_page" href="#collection">Bộ sưu tập <i class="fa-solid fa-caret-down"></i></a> 
                         <div class="collection_menu">
-                            <div class="collection"><a class="not" href="couch-page/xmas-collection.html">Giáng Sinh</a></div>
+                            <div class="collection"><a class="not" href="./xmas-collection.html">Giáng Sinh</a></div>
                             <div class="collection">Trung Thu</div>
                             <div class="collection">Halloween</div>
                             <div class="collection">Lễ Tết</div>
-                            <div class="collection-see-all"><a class="not" href="doan-ie104/collection-page.html"> Xem tất cả <i class="fa-solid fa-chevron-right"></i></a></div>
+                            <div class="collection-see-all"><a class="not" href="./collection-page.html"> Xem tất cả <i class="fa-solid fa-chevron-right"></i></a></div>
                           </div></li>
                         <li><a href="news/news.html">Tin tức</a></li>
                         <li><a href="about/about.html">Về chúng tôi</a></li>
@@ -105,7 +105,7 @@
             </div>
             <div class="product_menu">
                 <div class="list-row"> 
-                    <div class="product"><a class="not" href="/couch-page.html">Ghế dài</a></div>
+                    <div class="product"><a class="not" href="./couch-page.html">Ghế dài</a></div>
                     <div class="product">Ghế bành</div>
                     <div class="product">Ghế tựa</div>
                     <div class="product">Ghế đôn</div>
@@ -461,12 +461,21 @@
                 $('.ad').fadeOut()
             }, 5000);
             $('.sign-in-btn').click(e=>{
+                var signinid = document.getElementById('sign-in-id').value;
+                var signinpass = document.getElementById('sign-in-pass').value
+                if(signinid || signinpass == null)
+                window.alert('Vui lòng điền đẩy đủ tài khoản và mật khẩu để đăng nhập !!');
+                else    
                 window.alert('Đăng nhập thành công !!');
             })
             $('.sign-up-btn').click(e=>{
                 var signupid = document.getElementById('sign-up-id').value;
                 var signuppass = document.getElementById('sign-up-pass').value
                 var signuppass2 =  document.getElementById('sign-up-pass2').value
+                if(signuppass || signuppass2 || signupid == null){
+                window.alert('Vui lòng điền đẩy đủ tài khoản và mật khẩu để đăng ký !!');
+                }
+                else    
                 if(signuppass != signuppass2){
                     window.alert('Xác nhận mật khẩu sai !! Vui lòng Đăng kí lại!')
                     return;
