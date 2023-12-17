@@ -952,6 +952,10 @@ html{
     background-color: white;
     color: #000;
 }
+.room_page.hover{
+  background-color: white;
+  color: #000;
+}
 .collection-see-all{
     font-style: italic;
     font-weight: bolder;
