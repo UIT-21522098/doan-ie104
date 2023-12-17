@@ -734,3 +734,13 @@ letter-spacing: -0.42px;
     white-space: nowrap;
     font-style:normal;
   }
+
+  #account_section a{
+    text-decoration: none;
+    color: #A84448;
+  }
+
+  .list-row a{
+    text-decoration: none;
+    color: black
+  }
