@@ -183,7 +183,7 @@
                         <button class="quantity-btn" onclick="incrementQuantity()">+</button>
                     </div>
                     <button class="add-to-cart">Thêm Vào Giỏ Hàng</button></a>
-                    <button class="buy-now">Mua Ngay</button></a>
+                    <button class="buy-now" id="buy" onclick="replaceCSS()">Mua Ngay</button></a>
 
                 
             </div>
@@ -457,17 +457,21 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-// function replaceCSS(){
-// fetch('account.html')
-//                 .then(response => response.text())
-//                 .then(html => {
-//                     // Thay đổi CSS của trang hiện tại
-//                     var modifiedHTML = html.replace('<p>Na<br>', '<p>Na1234<br>');
-//                     document.documentElement.innerHTML = modifiedHTML;
-//                 })
-//                 .catch(error => console.error('Fetch error:', error));
-//             }
+function replaceCSS(){
+fetch('cart.html')
+                .then(response => response.text())
+                .then(html => {
+                    // Thay đổi CSS của trang hiện tại
+                    var modifiedHTML = html.replace('<div class="cart-product"><div class="cart-image"></div><div class="delete-icon"><i class="material-icons"></i></div><div class="cartDetail"></div>', '<div class="cart-list"><div class="cartDetail"><h3>Ghế dài</h3><h4><span class="price" data-price="12.000.000">12.000.000đ</span></h4><div class="quantity-container"><button class="quantity-btn" onclick="decrementQuantity()">-</button><input type="number" id="quantity" class="quantity-input" value="1" min="1"><button class="quantity-btn" onclick="incrementQuantity()">+</button></div></div><div class="total"><p>Thành tiền</p><p><span id="total-price">12.000.000đ</span></p></div>');
+                    document.documentElement.innerHTML = modifiedHTML;
+                })
+                .catch(error => console.error('Fetch error:', error));
+            }
 
+        // function changeCSS() {
+        //     // Gửi thông điệp đến trang 2
+        //     window.parent.postMessage({ type: 'changeCSS' }, '*');
+        // }
      
 
         $(document).ready(function(){
