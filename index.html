@@ -457,6 +457,9 @@
             productmenu.style.display='none';
             collectionmenu.style.display='none';
             roommenu.style.display='none';
+            setTimeout(() => {
+                $('.ad').fadeOut()
+            }, 5000);
             $('.sign-in-btn').click(e=>{
                 window.alert('Đăng nhập thành công !!');
             })
