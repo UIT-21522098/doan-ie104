@@ -447,12 +447,9 @@
             var roommenu= document.querySelector('.room_menu');
             var isHovered = false;
             var sub_table = document.querySelector('.sub_res_table')
-            var mess=document.querySelector('.mess-table');
-            var messclicktime=0;
             var accountclicktime=0;
             var subresclicktime=0;
             sub_table.style.display = 'none'
-            mess.style.display='none';
             productmenu.style.display='none';
             collectionmenu.style.display='none';
             roommenu.style.display='none';
@@ -469,18 +466,6 @@
                 }
                 else
                 window.alert('Đăng kí thành công~!\nID : ' + signupid + '\nPassword : '+signuppass);
-            })
-            setTimeout(e => {
-                $('.ad').fadeOut();
-            }, 5000);
-            $('.mess').click(e=>{
-                if(messclicktime%2==1)
-                {
-                $(mess).fadeOut();
-                }
-                else
-                $(mess).fadeIn();
-                messclicktime++;
             })
             $('.product_page,.product_menu').mouseenter(function() {
                 isHovered = true;
