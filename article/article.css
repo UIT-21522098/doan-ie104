@@ -239,7 +239,10 @@ ul {
 li {
   float: left;
 }
-
+a{
+  text-decoration: none;
+  color: #000;
+}
 header a {
   display: block;
   color: black;
