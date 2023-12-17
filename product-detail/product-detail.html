@@ -44,20 +44,20 @@
               <header>
                   <nav>
                   <ul>
-                      <li><a href="#home">Trang chủ</a></li>
-                      <li><a class="product_page" href="#product">Sản phẩm <i class="fa-solid fa-caret-down"></i></a></li>
-                      <li><a href="#rooms">Loại phòng</a></li>
-                      <li><a class="collection_page" href="#collection">Bộ sưu tập <i class="fa-solid fa-caret-down"></i></a>
+                      <li><a href="../index.html">Trang chủ</a></li>
+                      <li><a class="product_page">Sản phẩm <i class="fa-solid fa-caret-down"></i></a></li>
+                      <li><a href="../couch-page/room-page.html">Loại phòng</a></li>
+                      <li><a class="collection_page" href="../couch-page/collection-page.html">Bộ sưu tập <i class="fa-solid fa-caret-down"></i></a>
                         <div class="collection_menu">
-                            <div class="collection">Thảm</div>
-                            <div class="collection">Gối</div>
-                            <div class="collection">Cây</div>
-                            <div class="collection">Gương</div>
+                            <div class="collection">Giáng sinh</div>
+                            <div class="collection">Trung Thu</div>
+                            <div class="collection">Halloween</div>
+                            <div class="collection">Lễ Tết</div>
                             <div class="collection-see-all">Xem tất cả <i class="fa-solid fa-chevron-right"></i></div>
                           </div></li>
-                      <li><a href="#news">Tin tức</a></li>
-                      <li><a href="#services">Về chúng tôi</a></li>
-                      <li><a href="#contact">Liên hệ</a></li>
+                      <li><a href="../news/news.html">Tin tức</a></li>
+                      <li><a href="../about/about.html">Về chúng tôi</a></li>
+                      <li><a href="../contact/contact.html">Liên hệ</a></li>
                       
                   </ul>
               </nav>
@@ -456,17 +456,16 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-
-function replaceCSS(){
-fetch('cart.html')
-                .then(response => response.text())
-                .then(html => {
-                    // Thay đổi CSS của trang hiện tại
-                    var modifiedHTML = html.replace('<div class="cart-product"><div class="cart-image"></div><div class="delete-icon"><i class="material-icons"></i></div><div class="cartDetail"></div><div class="bill"><h2>Đơn hàng</h2><h4>Tổng thanh toán (0 sản phẩm): 0đ</h4>', '<div class="cart-list"><div class="cartDetail"><h3>Ghế dài</h3><h4><span class="price" data-price="12.000.000">12.000.000đ</span></h4><div class="quantity-container"><button class="quantity-btn" onclick="decrementQuantity()">-</button><input type="number" id="quantity" class="quantity-input" value="1" min="1"><button class="quantity-btn" onclick="incrementQuantity()">+</button></div></div><div class="total"><p>Thành tiền</p><p><span id="total-price">12.000.000đ</span></p></div><div class="bill"><h2>Đơn hàng</h2><h4>Tổng thanh toán (1 sản phẩm): 12.000.000đ</h4>');
-                    document.documentElement.innerHTML = modifiedHTML;
-                })
-                .catch(error => console.error('Fetch error:', error));
-            }
+// function replaceCSS(){
+// fetch('../cart/cart.html')
+//                 .then(response => response.text())
+//                 .then(html => {
+//                     // Thay đổi CSS của trang hiện tại
+//                     var modifiedHTML = html.replace('<div class="cart-product"><div class="cart-image"></div><div class="delete-icon"><i class="material-icons"></i></div><div class="cartDetail"></div><div class="bill"><h2>Đơn hàng</h2><h4>Tổng thanh toán (0 sản phẩm): 0đ</h4>', '<div class="cart-list"><div class="cartDetail"><h3>Ghế dài</h3><h4><span class="price" data-price="12.000.000">12.000.000đ</span></h4><div class="quantity-container"><button class="quantity-btn" onclick="decrementQuantity()">-</button><input type="number" id="quantity" class="quantity-input" value="1" min="1"><button class="quantity-btn" onclick="incrementQuantity()">+</button></div></div><div class="total"><p>Thành tiền</p><p><span id="total-price">12.000.000đ</span></p></div><div class="bill"><h2>Đơn hàng</h2><h4>Tổng thanh toán (1 sản phẩm): 12.000.000đ</h4>');
+//                     document.documentElement.innerHTML = modifiedHTML;
+//                 })
+//                 .catch(error => console.error('Fetch error:', error));
+//             }
 
         $(document).ready(function(){
             var div1 = document.querySelector('.product_page');

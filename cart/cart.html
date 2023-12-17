@@ -19,52 +19,25 @@
               <input id="search_text" type="text" placeholder="Tìm Kiếm">
               <img class="search_img" src="images/Search.png" alt="">
           </div>
-          <div id="account_section">
-            <div id="wishlist">
-                <a href="favorite.html"> 
-                  <div id="wishlist_img"><img src="images/Heart.png" alt=""></div>
-                  <div id="wishlist_text">Yêu thích</div>
-                </a> 
-              </div> 
-              <div id="cart">
-                <a href="cart.html"> 
-                  <div id="cart_img"><img src="images/Feather Icon.png" alt=""></div>
-                  <div id="cart_text">Giỏ hàng</div>
-                </a>
-              </div>
-              <div id="account">
-                <a href="account.html"> 
-                  <div><img src="images/User.png" alt=""></div>
-                  <div>Tài khoản</div>
-                </a> 
-              </div>
-          </div>
+
           <div class="sticky">
           <header>
               <nav>
               <ul>
-                  <li><a href="index.html">Trang chủ</a></li>
+                  <li><a href="../index.html">Trang chủ</a></li>
                   <li><a class="product_page">Sản phẩm <i class="fa-solid fa-caret-down"></i></a></li>
-                  <li><a class="room_page" href="room-page.html">Loại phòng <i class="fa-solid fa-caret-down"></i></a>
-                    <div class="room_menu">
-                        <div class="collection"><a href="livingroom-product.html">Phòng khách</a></div>
-                        <div class="collection">Phòng ăn</div>
-                        <div class="collection">Nhà bếp</div>
-                        <div class="collection">Phòng ngủ</div>
-                        <div class="collection-see-all">Xem tất cả <i class="fa-solid fa-chevron-right"></i></div>
-                      </div>
-                </li>
-                  <li><a class="collection_page" href="collection-page.html">Bộ sưu tập <i class="fa-solid fa-caret-down"></i></a>
+                  <li><a href="../couch-page/room-page.html">Loại phòng</a></li>
+                  <li><a class="collection_page" href="../couch-page/collection-page.html">Bộ sưu tập <i class="fa-solid fa-caret-down"></i></a>
                     <div class="collection_menu">
-                        <div class="collection"><a href="xmas-collection">Giáng Sinh</a></div>
+                        <div class="collection"><a href="../couch-page/xmas-collection.html">Giáng sinh</a></div>
                         <div class="collection">Trung Thu</div>
                         <div class="collection">Halloween</div>
                         <div class="collection">Lễ Tết</div>
                         <div class="collection-see-all">Xem tất cả <i class="fa-solid fa-chevron-right"></i></div>
                       </div></li>
-                  <li><a href="news.html">Tin tức</a></li>
-                  <li><a href="about.html">Về chúng tôi</a></li>
-                  <li><a href="contact.html">Liên hệ</a></li>
+                  <li><a href="../news/news.html">Tin tức</a></li>
+                  <li><a href="../about/about.html">Về chúng tôi</a></li>
+                  <li><a href="../contact/contact.html">Liên hệ</a></li>
                   
               </ul>
           </nav>
@@ -110,7 +83,7 @@
       </div>
   <div class="product_menu">
   <div class="list-row"> 
-      <div class="product"><a href="couch-page.html">Ghế dài</a></div>
+      <div class="product"><a href="../couch-page/couch-page.html">Ghế dài</a></div>
       <div class="product">Ghế bành</div>
       <div class="product">Ghế tựa</div>
       <div class="product">Ghế đôn</div>
@@ -148,20 +121,48 @@
     <div class="cart-container">
         <div class="menu-container">
             <div class="favorite">
-                <i class="material-icons">favorite</i><a href="favorite.html">Yêu thích</a></div>
+                <i class="material-icons">favorite</i><a href="../couch-page/favorite.html">Yêu thích</a></div>
             <div class="cart">
-                <i class="material-icons">shopping_cart</i><a href="cart.html">Giỏ hàng</a></div>
+                <i class="material-icons">shopping_cart</i><a href="../cart/cart.html">Giỏ hàng</a></div>
             <div class="account">
-                <i class="material-icons">person</i><a href="account.html">Tài khoản</a></div>
+                <i class="material-icons">person</i><a href="../account/account.html">Tài khoản</a></div>
         </div>
 
         <div class="cart-body">
             <h2>Giỏ hàng</h2>
-            <div class="cart-product"><div class="cart-image"></div><div class="delete-icon"><i class="material-icons"></i></div><div class="cartDetail"></div></div></div></div>
+            <div class="cart-list">
+                <div class="cart-product">
+                    <div class="cart-image">
+                        <img src="images/f20fa2a89ea4a4f83be1d7b744c8cdfe.png">
+                    </div>
 
+                    <div class="cart-detail">
+                        <h3>Cây thông Giáng sinh</h3>
+                        <h4>200.000đ</h4>
+                    </div>
+        
+                    <div class="delete-icon">
+                        <i class="material-icons">close</i>
+                    </div>
+
+                
+
+                    <div class="total">
+                        <p>Thành tiền</p>
+                        <p>200.000đ</p>
+                    </div>
+
+                    <div class="quantity-container">
+                        <button class="quantity-btn" onclick="decrementQuantity()">-</button>
+                        <input type="number" id="quantity" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn" onclick="incrementQuantity()">+</button>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="bill">
             <h2>Đơn hàng</h2>
-            <h4>Tổng thanh toán (0 sản phẩm): 0đ</h4>
+            <h4>Tổng thanh toán (1 sản phẩm): 200.000đ</h4>
             <h5>Giá này chưa bao gồm phí vận chuyển, phí gói hàng, giảm giá và thuế.</h5><br>
             <button id="order">ĐẶT HÀNG</button>
             <h5>Nhấn “Đặt hàng” đồng nghĩa với việc bạn đồng ý tuân theo Điều khoản của chúng tôi.</h5>
@@ -290,7 +291,6 @@
         var div1 = document.querySelector('.product_page');
         var productmenu= document.querySelector('.product_menu');
         var collectionmenu= document.querySelector('.collection_menu');
-        var roommenu= document.querySelector('.room_menu');
         var isHovered = false;
         var sub_table = document.querySelector('.sub_res_table')
         var mess=document.querySelector('.mess-table');
@@ -299,7 +299,6 @@
         var subresclicktime=0;
         productmenu.style.display='none';
         collectionmenu.style.display='none';
-        roommenu.style.display='none';
         $('.sign-in-btn').click(e=>{
             window.alert('Đăng nhập thành công !!');
         })
@@ -372,25 +371,6 @@
             }, 20); 
         });
 
-        var div3 = document.querySelector('.room_page');
-        var isHovered = false;
-        $('.room_page,.room_menu').mouseenter(function() {
-            isHovered = true;
-            $('.room_menu').slideDown(); 
-            div3.classList.add('hover');
-});
-
-        $('.room_page,.room_menu').mouseleave(function() {
-            isHovered = false;
-            setTimeout(function() {
-            if (!isHovered) {
-                $('.room_menu').slideUp();
-                div3.classList.remove('hover');
-            }
-            }, 20); 
-        });
-
-
         $('#account').click(e=>{
             if(accountclicktime%2==1)
             {
@@ -433,9 +413,106 @@ $('.slide_show_product').slick({
     `<button type="button" class="slick-next"><i class="fa-solid fa-arrow-right"></i></button>`,
 });
 });
+
+$(document).ready(function(){
+            var div1 = document.querySelector('.product_page');
+            var productmenu= document.querySelector('.product_menu');
+            var collectionmenu= document.querySelector('.collection_menu');
+            var isHovered = false;
+            var mess=document.querySelector('.mess-table');
+            var messclicktime=0;
+            var accountclicktime=0;
+            mess.style.display='none';
+            productmenu.style.display='none';
+            collectionmenu.style.display='none';
+            $('.sign-in-btn').click(e=>{
+                window.alert('Đăng nhập thành công !!');
+            })
+            $('.sign-up-btn').click(e=>{
+                var signupid = document.getElementById('sign-up-id').value;
+                var signuppass = document.getElementById('sign-up-pass').value
+                var signuppass2 =  document.getElementById('sign-up-pass2').value
+                if(signuppass != signuppass2){
+                    window.alert('Xác nhận mật khẩu sai !! Vui lòng Đăng kí lại!')
+                    return;
+                }
+                else
+                window.alert('Đăng kí thành công~!\nID : ' + signupid + '\nPassword : '+signuppass);
+            })
+            setTimeout(e => {
+                $('.ad').fadeOut();
+            }, 5000);
+            $('.mess').click(e=>{
+                if(messclicktime%2==1)
+                {
+                $(mess).fadeOut();
+                }
+                else
+                $(mess).fadeIn();
+                messclicktime++;
+            })
+            $('.product_page,.product_menu').mouseenter(function() {
+                isHovered = true;
+                $('.product_menu').slideDown(); 
+                div1.classList.add('hover');
+    });
+
+            $('.product_page,.product_menu').mouseleave(function() {
+                isHovered = false;
+                setTimeout(function() {
+                if (!isHovered) {
+                    $('.product_menu').slideUp();
+                    div1.classList.remove('hover');
+                }
+                }, 50);
+            });
+            var div2 = document.querySelector('.collection_page');
+            var isHovered = false;
+            $('.collection_page,.collection_menu').mouseenter(function() {
+                isHovered = true;
+                $('.collection_menu').slideDown(); 
+                div2.classList.add('hover');
+    });
+
+            $('.collection_page,.collection_menu').mouseleave(function() {
+                isHovered = false;
+                setTimeout(function() {
+                if (!isHovered) {
+                    $('.collection_menu').slideUp();
+                    div2.classList.remove('hover');
+                }
+                }, 20); 
+            });
+
+            $('#account').click(e=>{
+                if(accountclicktime%2==1)
+                {
+                $('.sign-in').fadeOut();
+                $('.sign-up').fadeOut();
+                }
+                else
+                $('.sign-in').fadeIn();
+                accountclicktime++;
+            })
+            $('.sign-in-opt').click(e=>{
+                
+                $('.sign-up').fadeOut();
+                setTimeout(() => {
+                    
+                $('.sign-in').fadeIn();
+                }, 200);
+            })
+            $('.sign-up-opt').click(e=>{
+                
+                $('.sign-in').fadeOut();
+                setTimeout(() => {
+                    
+                $('.sign-up').fadeIn();
+                }, 200);
+            })
+    });
 </script>
 <script src="https://kit.fontawesome.com/ae7bc8c7df.js" crossorigin="anonymous"></script>
-
 <script>
     function incrementQuantity() {
 const quantity = document.getElementById('quantity');
