@@ -164,8 +164,8 @@
                     </div>
 
                     <div class="cart-detail">
-                        <h3>Cây thông Giáng sinh</h3>
-                        <h4>200.000đ</h4>
+                        <h3>Ghế dài </h3>
+                        <h4>12.000.000đ</h4>
                     </div>
         
                     <div class="delete-icon">
@@ -173,14 +173,14 @@
                     </div>
 
                     
-                    <div class="quantity-icon">
-                        <i class="material-icons">add</i>
-                        <input type="text" value="1"><i class="material-icons">remove</i>
+                    <div class="quantity-container">
+                        <button class="quantity-btn" onclick="decrementQuantity()">-</button>
+                        <input type="number" id="quantity" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn" onclick="incrementQuantity()">+</button>
                     </div>
-
                     <div class="total">
                         <p>Thành tiền</p>
-                        <p>200.000đ</p>
+                        <p>12.000.000đ</p>
                     </div>
                 </div>
             </div>
@@ -188,7 +188,7 @@
 
         <div class="bill">
             <h2>Đơn hàng</h2>
-            <h4>Tổng thanh toán (1 sản phẩm): 200.000đ</h4>
+            <h4>Tổng thanh toán (1 sản phẩm): 12.000.000đ</h4>
             <h5>Giá này chưa bao gồm phí vận chuyển, phí gói hàng, giảm giá và thuế.</h5><br>
             <button id="order">ĐẶT HÀNG</button>
             <h5>Nhấn “Đặt hàng” đồng nghĩa với việc bạn đồng ý tuân theo Điều khoản của chúng tôi.</h5>
