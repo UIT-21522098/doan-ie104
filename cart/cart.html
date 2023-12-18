@@ -6,7 +6,7 @@
     <title>Giỏ hàng</title>
     <link rel="stylesheet" href="cart.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="icon" type="image/x-icon" href="account/images/Logo-img.png"/>
+
 </head>
 <body>
     <div class="container">
@@ -19,26 +19,7 @@
               <input id="search_text" type="text" placeholder="Tìm Kiếm">
               <img class="search_img" src="images/Search.png" alt="">
           </div>
-          <div id="account_section">
-            <div id="wishlist">
-                <a href="favorite.html"> 
-                  <div id="wishlist_img"><img src="images/Heart.png" alt=""></div>
-                  <div id="wishlist_text">Yêu thích</div>
-                </a> 
-              </div> 
-              <div id="cart">
-                <a href="cart.html"> 
-                  <div id="cart_img"><img src="images/Feather Icon.png" alt=""></div>
-                  <div id="cart_text">Giỏ hàng</div>
-                </a>
-              </div>
-              <div id="account">
-                <a href="../account/account.html"> 
-                  <div><img src="images/User.png" alt=""></div>
-                  <div>Tài khoản</div>
-                </a> 
-              </div>
-          </div>
+          
           <div class="sticky">
           <header>
               <nav>
@@ -164,8 +145,8 @@
                     </div>
 
                     <div class="cart-detail">
-                        <h3>Ghế dài </h3>
-                        <h4>12.000.000đ</h4>
+                        <h3>Cây thông Giáng sinh</h3>
+                        <h4>200.000đ</h4>
                     </div>
         
                     <div class="delete-icon">
@@ -173,14 +154,14 @@
                     </div>
 
                     
-                    <div class="quantity-container">
-                        <button class="quantity-btn" onclick="decrementQuantity()">-</button>
-                        <input type="number" id="quantity" class="quantity-input" value="1" min="1">
-                        <button class="quantity-btn" onclick="incrementQuantity()">+</button>
+                    <div class="quantity-icon">
+                        <i class="material-icons">add</i>
+                        <input type="text" value="1"><i class="material-icons">remove</i>
                     </div>
+
                     <div class="total">
                         <p>Thành tiền</p>
-                        <p>12.000.000đ</p>
+                        <p>200.000đ</p>
                     </div>
                 </div>
             </div>
@@ -188,7 +169,7 @@
 
         <div class="bill">
             <h2>Đơn hàng</h2>
-            <h4>Tổng thanh toán (1 sản phẩm): 12.000.000đ</h4>
+            <h4>Tổng thanh toán (1 sản phẩm): 200.000đ</h4>
             <h5>Giá này chưa bao gồm phí vận chuyển, phí gói hàng, giảm giá và thuế.</h5><br>
             <button id="order">ĐẶT HÀNG</button>
             <h5>Nhấn “Đặt hàng” đồng nghĩa với việc bạn đồng ý tuân theo Điều khoản của chúng tôi.</h5>
