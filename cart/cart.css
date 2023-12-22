@@ -19,7 +19,16 @@ body{
   background: var(#FFF);
   
 }
-
+.not{
+  text-decoration: none;
+  display: flex;
+  flex-direction:column;
+  text-align: center;
+  color: grey;
+}
+.not:hover{
+  color: black;
+}
 #search_text{
   display: flex;
   flex-shrink: 0;
