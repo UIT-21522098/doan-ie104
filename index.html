@@ -62,8 +62,8 @@
                         <div id="wishlist_text"><p>Yêu thích</p></div> 
                     </div>
                     <div id="cart">
-                        <div id="cart_img"><img src="images/Feather Icon.png" alt=""></div>
-                        <div id="cart_text"><a class="not" href="cart/cart.html">Giỏ hàng</a></div>
+                        <div id="cart_img"><a class="not" href="cart/cart.html"><img src="images/Feather Icon.png" alt=""></a></div>
+                        <div id="cart_text">Giỏ hàng</div>
                     </div>
                     <div id="account">
                         <div><img src="images/User.png" alt=""></div>
@@ -243,7 +243,7 @@
     <div class="lane5_content">
         <div class="lane5_header">Sản phẩm dựa trên loại phòng</div>
         <div class="lane5_menu">
-        <div class="lane5_opt1"></div>
+        <a class="not" href="livingroom-product.html"><div class="lane5_opt1"></div></a>
         <div class="lane5_opt2"></div>
         <div class="lane5_opt3"></div>
         <div class="lane5_opt4"></div>
@@ -261,14 +261,16 @@
             <div class="lane5_img"><img src="images/lane5_3.png" alt=""></div>
             <div class="lane5_img"><img src="images/lane5_4.png" alt=""></div>
         </div>
-        <div class="lane7_button">Xem thêm</div>
+        <div class="lane7_button"><a class="not" href="collection-page.html">Xem thêm</a></div>
     </div>
     <div id="lane8">
         <div class="lane8_header">Sản phẩm của chúng tôi</div>
         <div class="lane8_product">
+        <a href="couch-page.html">
         <div class="ghe_banh">
             <p class="product_text">Ghế bành</p>
         </div>
+        </a>
         <div class="ghe">
             <p class="product_text">Ghế</p>
         </div>
@@ -579,6 +581,9 @@
                 else
                 $('.sub_res_table').fadeIn();
                 subresclicktime++;
+            })
+            $('.ad').click(e=>{
+                $('.ad').fadeOut()
             })
         });
     

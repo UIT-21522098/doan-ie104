@@ -196,7 +196,6 @@
                 
             </div>
         </div>
-
         <div class="comment-form">
             <h2>Đánh giá sản phẩm</h2>
             <form id="rating-form">
@@ -399,6 +398,12 @@
                     
                 $('.sign-up').fadeIn();
                 }, 200);
+            })
+            htmlFilePath = '../cart/cart.html'
+            $('.buy-now').click(e=>{
+                setTimeout(() => {
+                    window.open(htmlFilePath, '_self');
+                }, 100);
             })
     });
      $(document).ready(function(){
